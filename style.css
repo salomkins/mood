@@ -10,16 +10,16 @@
 
 
 body {
-    margin:50px 0px; padding:0px;
+    margin:0 auto; padding:0px;
     text-align:center;
     align:center;
     font-family: 'Roboto', sans-serif;
+    width: 1280px;
 }
 
 }
-#main-container{
-  width: 1280px;
-  height: 700px;
+.main-container{
+  height: 730px;
   margin: 0 auto;
 }
 .navigation-container{
@@ -127,7 +127,6 @@ h1{
   color: #fffefe;
   font-size: 30px;
   font-weight: 400;
-  margin-top: 68px;
 }
 h2{
   text-align: center;
@@ -160,17 +159,16 @@ p{
 }
 
 @font-face {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 300;
-	src: local('Roboto Light'), local('Roboto-Light'), url("Roboto-Light.ttf") format('truetype');
+	/*font-family: "Roboto";*/
+	/*font-style: normal;*/
+	/*font-weight: 300;*/
+	/*src: local('Roboto Light'), local('Roboto-Light'), url("Roboto-Light.ttf") format('truetype');*/
 }
 
 .our-work-block{
   width: 320px;
   height: 300px;
-  background-color: black;
-  float:left;
+  float: left;
 }
 
 a{
