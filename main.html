@@ -1,0 +1,194 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext" rel="stylesheet">
+
+  </head>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+ <style>
+body, html, .main {
+    height: 100%;
+}
+
+section {
+    min-height: 100%;
+}
+</style>
+
+<body>
+  <div id = "main-container">
+    <div class = "main-container">
+      <div class="navigation-container cf">
+        <div class="logo-info">
+          <img src=media/logo_vertikali.png>
+          <div class = "logo-text">
+            <h2>dizaina darbnīca</h2>
+          </div>
+
+      </div>
+      <div class="navigation">
+        <div class="navigation-block">
+          <div class="navigation-overlay"></div>
+        <a href="#main-container">Sākums</a>
+      </div>
+        <div class="navigation-block">
+          <div class="navigation-overlay"></div>
+        <a href="#offers">Pakalpojumi</a>
+      </div>
+        <div class="navigation-block">
+          <div class="navigation-overlay"></div>
+        <a href="#our-work">Darbi</a>
+      </div>
+        <div class="navigation-block">
+          <div class="navigation-overlay"></div>
+        <a href="#team">Komanda</a>
+      </div>
+        <div class="navigation-block">
+          <div class="navigation-overlay"></div>
+        <a href="#contact-form-container">Sazināties</a>
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+    <div class="slider">
+      <img src="media/Logo-horizontali.png">
+      <h2>Mēs ticam, ka esam paveikuši savu darbu labi, ja klients iegūst efektīvu un viegli lietojamu instrumentu - vai tas būtu<br> mājas lapas prototips, makets, logotips - kas palīdz sasniegt nepieciešamo rezultātu - pārdot preci, izglītot, izklaidēt<br> vai informēt.</h2>
+    </div>
+
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+
+<!-- PAKALPOJUMU SADALA-->
+    <div id="offers">
+      <div class="title-container">
+        <h1>PAKALPOJUMI</h1>
+      </div>
+      <div class="offer-blocks-container cf">
+        <div class="one-offer-block">
+          <i class="fa fa-paint-brush" style="font-size:60px;color:white;"></i>
+          <h3>GRAFISKAIS DIZAINS</h3>
+            <p>Veicam plašu darbu klāstu<br> gan jauniem uzņēmumiem<br> (firmas stila un logo izstrāde,<br> zīmogs, vizītkartes), gan arī<br> apkalpojam uzņēmumu ik-<br>dienas reklāmas vajadzībām</p>
+        </div>
+        <div class="one-offer-block">
+          <i class="fa fa-eye" style="font-size:60px;color:white;"></i>
+          <h3>POLIGRĀFIJA</h3>
+          <p>Mēs sadarbojamies ar labāka-<br>jām tipogrāfijām un digitālās<br> drukas centriem un no-<br>drošinām to, ka klients iegūst<br> ne tikai maketu vai salikumu,<br> bet gatavu produktu – bukle-<br>tu, vizītkarti, plakātu un tml.</p>
+        </div>
+        <div class="one-offer-block">
+          <i class="fa fa-refresh fa-rotate-90" style="font-size:60px;color:white;"></i>
+          <h3>UI/UX DIZAINS</h3>
+          <p>Veidojam tīmekļa un aplikāciju<br> vizuālo un lietojamības<br> dizainu lai lietotājs ātri un ērti<br> var iegūt nepieciešamo informāciju</p>
+        </div>
+        <div class="one-offer-block">
+          <i class="fa fa-camera" style="font-size:60px;color:white;"></i>
+          <h3>FOTO / VIDEO APSTRĀDE</h3>
+          <p>Fotografējam produktus un<br> produktu kompozīcijas, interje-<br>rus, objektus un vietas reklā-<br>mas vajadzībām. Veicam<br> fotoapstrādi, kā arī video<br> montāžu un apstrādi</p>
+        </div>
+      </div>
+    </div>
+<!-- PAKALPOJUMU SADALA-->
+
+<!-- MUSU DARBI -->
+    <div class="our-work-container cf">
+      <div id="our-work">
+        <div class="our-work-block">
+          <img src="media/work1.jpg">
+        </div>
+        <div class="our-work-block">
+          <img src="media/work2.jpg">
+        </div>
+        <div class="our-work-block">
+          <img src="media/work3.jpg">
+        </div>
+        <div class="our-work-block">
+          <img src="media/work4.jpg">
+        </div>
+        <div class="our-work-block">
+          <img src="media/work5.jpg">
+        </div>
+        <div class="our-work-block">
+          <img src="media/work6.jpg">
+        </div>
+        <div class="our-work-block">
+          <img src="media/work7.jpg">
+        </div>
+        <div class="our-work-block">
+          <img src="media/work8.jpg">
+        </div>
+      </div>
+    </div>
+
+<!-- MUSU DARBI -->
+<div id="team">
+  <div class="team-container">
+    <h1>MŪSU KOMANDA</h1>
+    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec<br> sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam<br> nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti<br> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapi-<br>bus condimentum sit amet a augue</p>
+  <div class="team-blocks-container cf">
+    <div class="one-team-block">
+      <!-- overlay nav pabeigts -->
+      <div class="team-overlay">
+    <img src="media/team1.jpg">
+      </div>
+    <h3>Jānis Pirmais</h3>
+    <h4>Izpilddirektors</h4>
+  </div>
+    <div class="one-team-block">
+    <img src="media/team2.jpg">
+    <h3>Annija Otrā</h3>
+    <h4>Grafiskā dizainere</h4>
+  </div>
+    <div class="one-team-block">
+    <img src="media/team3.jpg">
+    <h3>Kristaps Trešais</h3>
+    <h4>Front-end izstrādātājs</h4>
+  </div>
+    <div class="one-team-block">
+    <img src="media/team4.jpg">
+    <h3>Ketija Ceturtā</h3>
+    <h4>UI/UX dizainere</h4>
+  </div>
+  </div>
+  </div>
+
+<div id="contact-form-container">
+  <div class="contact-form-container cf">
+  <h1>SAZINĀTIES</h1>
+  <form action="demo_form.asp" method="get">
+    <form id = "contact-form";>
+    <input type="text" name="fname" placeholder="Vārds Uzvārds"><br>
+    <input type="text" name="email" placeholder="E-pasts"><br>
+    <input type="textarea" name="question" placeholder="Tavs jautājums"><br>
+    <input type="submit" value="SŪTĪT ZIŅU">
+  </form>
+</div>
+
+<div class="map-container">
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:600px;width:1280px;'><div id='gmap_canvas' style='height:600px;width:1280px;'></div><div><small><a href="http://www.embedgooglemaps.com">Generate your Google map here, quick and easy!									Click here									Visit our website!</a></small></div><div><small><a href="https://binaireoptieservaringen.nl/">Meer weten over wat binaire opties precies zijn? Klik dan verder!</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(56.9416185,24.093912600000067),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(56.9416185,24.093912600000067)});infowindow = new google.maps.InfoWindow({content:'<strong>MOOD CREATIONS</strong><br>Valguma iela 6, Riga<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+</div>
+
+<div class="copyright">
+  &copy; Copyright tekstam ir jābūt šeit,2016
+</div>
+  </div>
+</body>
+</html>
