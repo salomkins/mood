@@ -1,185 +1,311 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
-    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+    <style>
+        body,
+        html,
+        .main {
+            height: 100%;
+        }
 
-
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        window.location.hash = hash;
-      });
-    }
-  });
-});
-</script>
- <style>
-body, html, .main {
-    height: 100%;
-}
-section {
-    min-height: 100%;
-}
-</style>
+        section {
+            min-height: 100%;
+        }
+    </style>
 </head>
 
 <body>
-  <div id = "header" class="header">
-      <div class="navigation-container cf">
-        <div class="logo-info">
-          <img src=media/logo_vertikali.png>
-          <div class = "logo-text">
-            <h2>dizaina darbnīca</h2>
-          </div>
-      </div>
-        <nav class="main-nav">
-          <a href="#main-container">Sākums</a>
-          <a href="#offers">Pakalpojumi</a>
-          <a href="#our-work">Darbi</a>
-          <a href="#team">Komanda</a>
-          <a href="#contact-form-container">Sazināties</a>
-        </nav>
+    <div id="header" class="header">
+        <div class="navigation-container cf">
+            <div class="logo-info">
+                <img src=media/logo_vertikali.png>
+                <div class="logo-text">
+                    <h2>dizaina darbnīca</h2>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <a class="navi" href="#main-container">Sākums</a>
+                <a class="navi" href="#offers">Pakalpojumi</a>
+                <a class="navi" href="#our-work">Darbi</a>
+                <a class="navi" href="#team">Komanda</a>
+                <a class="navi" href="#contact">Sazināties</a>
+            </nav>
+        </div>
 
+        <div class="slider-main cf">
+            <img src="media/Logo-horizontali.png">
+            <div class="main-description">Mēs ticam, ka esam paveikuši savu darbu labi, ja klients iegūst efektīvu un viegli lietojamu instrumentu - vai tas būtu mājas lapas prototips, makets, logotips - kas palīdz sasniegt nepieciešamo rezultātu - pārdot preci, izglītot, izklaidēt
+                vai informēt.</div>
+        </div>
+        <div class="slider-footer cf">
+                  <ul  class="social">
+                      <li><a href="#" class="active"><i class="fa fa-twitter fa-lg"></i></a></li>
+                      <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+                      <li><a href="#"><i class="fa fa-dribbble fa-lg"></i></a></li>
+                      <li><a href="#"><i class="fa fa-behance fa-lg"></i></a></li>
+                  </ul>
+              </div>
     </div>
-
-    <div class="slider cf">
-      <img src="media/Logo-horizontali.png">
-      <p class="main-description">Mēs ticam, ka esam paveikuši savu darbu labi, ja klients iegūst efektīvu un viegli lietojamu instrumentu - vai tas būtu<br> mājas lapas prototips, makets, logotips - kas palīdz sasniegt nepieciešamo rezultātu - pārdot preci, izglītot, izklaidēt<br> vai informēt.</p>
-    </div>
-
-    <div class="parent">
-      <div class="child"></div>
-    </div>
-  </div>
-<!-- PAKALPOJUMU SADALA-->
+    <!-- PAKALPOJUMU SADALA-->
     <div id="offers" class="container-offers cf">
-      <div class="container-title">
-        <h1>PAKALPOJUMI</h1>
-      </div>
-      <div class="offer-blocks-container cf">
-        <div class="one-offer-block">
-          <img src="media/brush.svg">
-          <h3>GRAFISKAIS DIZAINS</h3>
-            <p>Veicam plašu darbu klāstu<br> gan jauniem uzņēmumiem<br> (firmas stila un logo izstrāde,<br> zīmogs, vizītkartes), gan arī<br> apkalpojam uzņēmumu ik-<br>dienas reklāmas vajadzībām</p>
+        <div class="container-title">
+            <h1>PAKALPOJUMI</h1>
         </div>
-        <div class="one-offer-block">
-          <img src="media/eye.svg">
-          <h3>POLIGRĀFIJA</h3>
-          <p>Mēs sadarbojamies ar labāka-<br>jām tipogrāfijām un digitālās<br> drukas centriem un no-<br>drošinām to, ka klients iegūst<br> ne tikai maketu vai salikumu,<br> bet gatavu produktu – bukle-<br>tu, vizītkarti, plakātu un tml.</p>
+        <div class="offer-blocks-container cf">
+            <div class="one-offer-block">
+                <img src="media/brush.svg">
+                <h3>GRAFISKAIS DIZAINS</h3>
+                <p>Veicam plašu darbu klāstu gan jauniem uzņēmumiem (firmas stila un logo izstrāde, zīmogs, vizītkartes), gan arī
+                    < apkalpojam uzņēmumu ikdienas reklāmas vajadzībām</p>
+            </div>
+            <div class="one-offer-block">
+                <img src="media/eye.svg">
+                <h3>POLIGRĀFIJA</h3>
+                <p>Mēs sadarbojamies ar labākajām tipogrāfijām un digitālās drukas centriem un nodrošinām to, ka klients iegūst ne tikai maketu vai salikumu, bet gatavu produktu – bukletu, vizītkarti, plakātu un tml.</p>
+            </div>
+            <div class="one-offer-block">
+                <img src="media/uiux.svg">
+                <h3>UI/UX DIZAINS</h3>
+                <p>Veidojam tīmekļa un aplikāciju vizuālo un lietojamības dizainu lai lietotājs ātri un ērti var iegūt nepieciešamo informāciju</p>
+            </div>
+            <div class="one-offer-block">
+                <img src="media/camera.svg">
+                <h3>FOTO / VIDEO APSTRĀDE</h3>
+                <p>Fotografējam produktus un produktu kompozīcijas, interjerus, objektus un vietas reklāmas vajadzībām. Veicam fotoapstrādi, kā arī video montāžu un apstrādi</p>
+            </div>
         </div>
-        <div class="one-offer-block">
-          <img src="media/uiux.svg">
-          <h3>UI/UX DIZAINS</h3>
-          <p>Veidojam tīmekļa un aplikāciju<br> vizuālo un lietojamības<br> dizainu lai lietotājs ātri un ērti<br> var iegūt nepieciešamo informāciju</p>
-        </div>
-        <div class="one-offer-block">
-          <img src="media/camera.svg">
-          <h3>FOTO / VIDEO APSTRĀDE</h3>
-          <p>Fotografējam produktus un<br> produktu kompozīcijas, interje-<br>rus, objektus un vietas reklā-<br>mas vajadzībām. Veicam<br> fotoapstrādi, kā arī video<br> montāžu un apstrādi</p>
-        </div>
-      </div>
     </div>
-<!-- PAKALPOJUMU SADALA-->
+    <!-- PAKALPOJUMU SADALA-->
 
-<!-- MUSU DARBI -->
+    <!-- MUSU DARBI -->
     <div id="our-work" class="container-work cf">
         <h1>MŪSU DARBI</h1>
-      <div class="description-work cf">
-        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.<p>
-      </div>
+        <div class="description-work cf">
+            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                Nam nec tellus a odio tincidunt auctor a ornare odio.
+                <p>
+        </div>
+        <nav class="work-nav">
+            <a href=" ">VISS</a>
+            <a href=" ">IDENTITĀTE</a>
+            <a href=" ">WEB DIZAINS</a>
+            <a href=" ">APLIKĀCIJU DIZAINS</a>
+            <a href=" ">FOTOGRĀFIJA</a>
+        </nav>
+        <div class="slider">
+          <button class="active"></button>
+          <button></button>
+          <button></button>
+        </div>
     </div>
-      <div class="work-gallery cf">
+    <div class="work-gallery cf">
         <div class="our-work-block">
-          <img src="media/work1.jpg">
-        </div>
-        <div class="our-work-block">
-          <img src="media/work2.jpg">
-        </div>
-        <div class="our-work-block">
-          <img src="media/work3.jpg">
-        </div>
-        <div class="our-work-block">
-          <img src="media/work4.jpg">
-        </div>
-        <div class="our-work-block">
-          <img src="media/work5.jpg">
-        </div>
-        <div class="our-work-block">
-          <img src="media/work6.jpg">
-        </div>
-        <div class="our-work-block">
-          <img src="media/work7.jpg">
-        </div>
-        <div class="our-work-block">
-          <img src="media/work8.jpg">
-        </div>
-      </div>
+          <div class="our-work-image">
+            <img src="media/work1.jpg">
+              <div class="work-overlay">
 
+              </div>
+          </div>
+        </div>
+        <div class="our-work-block">
+            <div class="our-work-image">
+            <img src="media/work2.jpg">
+              <div class="work-overlay">
 
+              </div>
+            </div>
+        </div>
+        <div class="our-work-block">
+          <div class="our-work-image">
+            <img src="media/work3.jpg">
+              <div class="work-overlay">
 
-<!-- MUSU DARBI -->
-<div id="team">
-  <div class="team-container cf">
-    <h1>MŪSU KOMANDA</h1>
-    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec<br> sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam<br> nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti<br> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapi-<br>bus condimentum sit amet a augue</p>
-  <div class="team-blocks-container cf">
-    <div class="one-team-block">
-      <!-- overlay nav pabeigts -->
-      <div class="team-overlay">
-        <img src="media/team1.jpg">
-      </div>
-      <h3>Jānis Pirmais</h3>
-      <h4>Izpilddirektors</h4>
+              </div>
+          </div>
+        </div>
+        <div class="our-work-block">
+          <div class="our-work-image">
+            <img src="media/work4.jpg">
+              <div class="work-overlay">
+
+              </div>
+          </div>
+        </div>
+        <div class="our-work-block">
+          <div class="our-work-image">
+            <img src="media/work5.jpg">
+              <div class="work-overlay">
+
+              </div>
+          </div>
+        </div>
+        <div class="our-work-block">
+          <div class="our-work-image">
+            <img src="media/work6.jpg">
+              <div class="work-overlay">
+                <a href=" ">
+                  <img src="">
+                  <h3>Proin gravida nibh vel velit</h3>
+                  <h4>Fotogrāfija </h4>
+              </a>
+              </div>
+          </div>
+        </div>
+        <div class="our-work-block">
+          <div class="our-work-image">
+            <img src="media/work7.jpg">
+              <div class="work-overlay">
+
+              </div>
+          </div>
+        </div>
+        <div class="our-work-block">
+          <div class="our-work-image">
+            <img src="media/work8.jpg">
+              <div class="work-overlay">
+
+              </div>
+          </div>
+        </div>
     </div>
-    <div class="one-team-block">
-    <img src="media/team2.jpg">
-    <h3>Annija Otrā</h3>
-    <h4>Grafiskā dizainere</h4>
-  </div>
-    <div class="one-team-block">
-    <img src="media/team3.jpg">
-    <h3>Kristaps Trešais</h3>
-    <h4>Front-end izstrādātājs</h4>
-  </div>
-    <div class="one-team-block">
-    <img src="media/team4.jpg">
-    <h3>Ketija Ceturtā</h3>
-    <h4>UI/UX dizainere</h4>
-  </div>
-  </div>
-  </div>
-
-<div id="contact-form-container">
-  <div class="contact-form-container cf">
-    <h1>SAZINĀTIES</h1>
-      <div class="contact-form">
-        <form action="demo_form.asp" method="get">
-        <form id = "contact-form";>
-        <input type="text" name="fname" placeholder="Vārds Uzvārds"><br>
-        <input type="text" name="email" placeholder="E-pasts"><br>
-        <textarea type="textarea" name="question" placeholder="Tavs jautājums"></textarea>
-        <input type="submit" value="SŪTĪT ZIŅU">
-        </form>
-      </div>
-</div>
-
-<div class="map-container">
-<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div id='gmap_canvas' style='height:600px;width:100%;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(56.9416185,24.093912600000067),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(56.9416185,24.093912600000067)});infowindow = new google.maps.InfoWindow({content:'<strong>MOOD CREATIONS</strong><br>Valguma iela 6, Riga<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
 
 
-<div class="copyright cf">
-  &copy; Copyright tekstam ir jābūt šeit,2016
-</div>
-  </div>
+
+    <!-- MUSU DARBI -->
+    <div id="team">
+        <div class="team-container cf">
+            <h1>MŪSU KOMANDA</h1>
+            <p class="team-description">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
+                velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.
+                Nullam ac urna eu felis dapibus condimentum sit amet a augue</p>
+        <div class="slider">
+          <button class="active"></button>
+          <button></button>
+          <button></button>
+        </div>
+            <div class="team-block-container cf">
+                <div class="one-team-block">
+                    <div class="team-image">
+                      <img src="media/team1.jpg">
+                      <div class="team-overlay">
+
+                      </div>
+                    </div>
+                    <h3>Jānis Pirmais</h3>
+                    <h4>Izpilddirektors</h4>
+                </div>
+                <div class="one-team-block">
+                  <div class="team-image">
+                    <img src="media/team2.jpg">
+                      <div class="team-overlay">
+                        Proin gravida nibh vel velit auctor aliquet
+                      </div>
+                    <h3>Annija Otrā</h3>
+                    <h4>Grafiskā dizainere</h4>
+                </div>
+                </div>
+                <div class="one-team-block">
+                  <div class="team-image">
+                    <img src="media/team3.jpg">
+                    <div class="team-overlay">
+
+                    </div>
+                  </div>
+                    <h3>Kristaps Trešais</h3>
+                    <h4>Front-end izstrādātājs</h4>
+                </div>
+                <div class="one-team-block">
+                  <div class="team-image">
+                    <img src="media/team4.jpg">
+                    <div class="team-overlay">
+
+                    </div>
+                </div>
+                    <h3>Ketija Ceturtā</h3>
+                    <h4>UI/UX dizainere</h4>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="container-contact cf">
+            <h1>SAZINĀTIES</h1>
+            <div class="contact-form">
+                <form id="contact-form" action="demo_form.asp" method="get">
+                    <div class="form-field">
+                        <input type="text" name="fname" placeholder="Vārds Uzvārds">
+                    </div>
+                    <div class="form-field">
+                        <input type="text" name="email" placeholder="E-pasts">
+                    </div>
+                    <div class="form-area">
+                        <textarea type="textarea" name="question" placeholder="Tavs jautājums"></textarea>
+                    </div>
+                    <div class="form-button">
+                        <input type="submit" value="SŪTĪT ZIŅU">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="map-container cf">
+            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+            <div id='gmap_canvas' style='height:600px;width:100%;'></div>
+            <style>
+                #gmap_canvas img {
+                    max-width: none!important;
+                    background: none!important
+                }
+            </style>
+        </div>
+        <script type='text/javascript'>
+            function init_map() {
+                var myOptions = {
+                    zoom: 14,
+                    center: new google.maps.LatLng(56.9416185, 24.093912600000067),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                marker = new google.maps.Marker({
+                    map: map,
+                    position: new google.maps.LatLng(56.9416185, 24.093912600000067)
+                });
+                infowindow = new google.maps.InfoWindow({
+                    content: '<strong>MOOD CREATIONS</strong><br>Valguma iela 6, Riga<br>'
+                });
+                google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.open(map, marker);
+                });
+                infowindow.open(map, marker);
+            }
+            google.maps.event.addDomListener(window, 'load', init_map);
+        </script>
+
+
+        <div class="copyright cf">
+            &copy; Copyright tekstam ir jābūt šeit,2016
+        </div>
+    </div>
 </body>
+
 </html>
