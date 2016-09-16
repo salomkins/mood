@@ -47,6 +47,7 @@ body {
 
 .main-nav{
   text-decoration: none;
+  padding: 0 50px;
 }
 
 .navi{
@@ -54,7 +55,9 @@ body {
   text-decoration: none;
   text-align: center;
   line-height: 65px;
+  padding-left: 15px;
 }
+
 
 .title-container{
   height: 80px;
@@ -135,6 +138,13 @@ float: left;
 .our-work-image:hover .work-overlay{
   visibility: visible;
 }
+
+.work-nav a{
+  padding-right: 50px;
+}
+
+
+
 .team-container{
   background-color: #57aa68;
   height: 790px;
