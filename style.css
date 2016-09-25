@@ -26,7 +26,7 @@ body {
 }
 
 .navigation-container {
-    background-color: rgba(211, 53, 35, 0.3);
+    background-color: rgba(211, 53, 35, 0.9);
     height: 70px;
     text-align: right;
     position: fixed;
@@ -64,6 +64,18 @@ body {
     padding-left: 15px;
 }
 
+.main-nav .navi {
+  padding: 0 10px;
+  margin: 0;
+  border-top: 5px solid transparent;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.main-nav .navi:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
 .title-container {
     height: 80px;
     background-color: #d33523;
@@ -76,6 +88,8 @@ body {
 .main-description {
     padding-left: 170px;
     padding-right: 170px;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 .social li {
@@ -90,15 +104,21 @@ body {
 }
 
 .container-offers {
-    height: 550px;
+    height: auto;
     background-color: #d33523;
     text-align: center;
 }
 
+.offer-blocks-container{
+  width: 90vw;
+  margin: 0 auto;
+}
+
 .one-offer-block {
-    width: 290px;
-    height: 300px;
-    display: inline-block;
+    width: 25%;
+    float: left;
+    padding-left: 30px;
+    padding-bottom: 50px;
     vertical-align: top;
     margin: auto;
     position: relative;
@@ -153,6 +173,73 @@ body {
 
 .work-nav a {
     padding-right: 50px;
+    text-transform: uppercase;
+}
+
+.price-nav a {
+    padding-right: 50px;
+    text-transform: uppercase;
+}
+
+.price-nav{
+  padding-top: 90px;
+  padding-bottom: 40px;
+}
+
+.pricelist {
+  background:
+      linear-gradient(
+        rgba(111, 250, 255, 0.5),
+        rgba(111, 250, 255, 0.5)
+      ),
+      url("media/bg-green.svg");
+      background-size: cover;
+  }
+
+.table-pricelist{
+  background-color: rgb(42, 87, 89);
+}
+.prices{
+  width: 86vw;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.prices td,
+.prices th {
+  vertical-align: middle;
+  width: 25%;
+  border-bottom: 1px solid #437c7e;
+}
+
+.prices td{
+  height: 50px;
+}
+
+.prices th{
+  height: 90px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.prices tfoot td{
+  height: 150px;
+}
+
+.prices .highlighted {
+   background: rgb(49, 103, 105)
+}
+
+button.sign-up{
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  background: none;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 5px;
+  text-transform: uppercase;
+  height: 40px;
+  width: 140px;
 }
 
 .team-container {
@@ -227,7 +314,7 @@ h1 {
     color: #fffefe;
     font-size: 30px;
     font-weight: 400;
-    padding-top: 53px;
+    padding-top: 80px;
 }
 
 h2 {
@@ -318,12 +405,12 @@ input[type=submit] {
     height: 35px;
 }
 
-.slider {
+.slider-horizontal {
     padding-top: 40px;
     padding-bottom: 30px;
 }
 
-button {
+button.slider-button{
     border-radius: 100%;
     width: 8px;
     height: 8px;
@@ -333,10 +420,30 @@ button {
     background-color: transparent;
 }
 
-.slider button:hover, button.active, .slider button.active {
+.slider-horizontal button:hover, button.active, .slider-horizontal button.active {
     background-color: rgb(255, 255, 255);
 }
 
 .contact-form {
     width: 100%;
+}
+
+.adress {
+    font-size: 21px;
+    font-weight: 300;
+    margin-top: 40px;
+}
+
+.slider-vertical {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    width: 0;
+    position: absolute;
+    top: 50%;
+    right: 4%;
+    transform: translateY(-50%);
+}
+
+.slider-vertical button:hover, button.active, .slider-vertical button.active {
+    background-color: rgb(255, 255, 255);
 }

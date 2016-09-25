@@ -45,19 +45,24 @@
                 </div>
             </div>
             <nav class="main-nav">
-                <a class="navi" href="#main-container">Sākums</a>
+                <a class="navi" href="#header">Sākums</a>
                 <a class="navi" href="#offers">Pakalpojumi</a>
                 <a class="navi" href="#our-work">Darbi</a>
                 <a class="navi" href="#team">Komanda</a>
                 <a class="navi" href="#contact">Sazināties</a>
             </nav>
         </div>
-
+        <div class="slider-vertical">
+            <button class="slider-button active"></button>
+            <button class="slider-button"></button>
+            <button class="slider-button"></button>
+        </div>
         <div class="slider-main cf">
             <img src="media/Logo-horizontali.png">
             <div class="main-description">Mēs ticam, ka esam paveikuši savu darbu labi, ja klients iegūst efektīvu un viegli lietojamu instrumentu - vai tas būtu mājas lapas prototips, makets, logotips - kas palīdz sasniegt nepieciešamo rezultātu - pārdot preci, izglītot, izklaidēt
                 vai informēt.</div>
         </div>
+
         <div class="slider-footer cf">
             <ul class="social">
                 <li><a href="#" class="active"><i class="fa fa-twitter fa-lg"></i></a></li>
@@ -107,16 +112,16 @@
                 <p>
         </div>
         <nav class="work-nav">
-            <a href=" ">VISS</a>
-            <a href=" ">IDENTITĀTE</a>
-            <a href=" ">WEB DIZAINS</a>
-            <a href=" ">APLIKĀCIJU DIZAINS</a>
-            <a href=" ">FOTOGRĀFIJA</a>
+            <a href=" ">viss</a>
+            <a href=" ">identitāte</a>
+            <a href=" ">web dizains</a>
+            <a href=" ">aplikāciju dizains</a>
+            <a href=" ">fotogrāfija</a>
         </nav>
-        <div class="slider">
-            <button class="active"></button>
-            <button></button>
-            <button></button>
+        <div class="slider-horizontal">
+            <button class="slider-button active"></button>
+            <button class="slider-button"></button>
+            <button class="slider-button"></button>
         </div>
     </div>
     <div class="work-gallery cf">
@@ -165,9 +170,9 @@
                 <img src="media/work6.jpg">
                 <div class="work-overlay">
                     <a href=" ">
-                        <img src="">
+                        <i class="fa fa-bullseye fa-5x" aria-hidden="true"></i>
                         <h3>Proin gravida nibh vel velit</h3>
-                        <h4>Fotogrāfija </h4>
+                        <h4>Fotogrāfija</h4>
                     </a>
                 </div>
             </div>
@@ -190,7 +195,77 @@
         </div>
     </div>
 
-
+<div class="pricelist-container">
+  <div class="pricelist cf">
+    <h1>CENRĀDIS</h1>
+    <nav class="price-nav">
+        <a href=" ">identitāte</a>
+        <a href=" ">web dizains</a>
+        <a href=" ">aplikāciju dizains</a>
+        <a href=" ">fotogrāfija</a>
+    </nav>
+  </div>
+    <div class="table-pricelist cf">
+      <table class="prices">
+        <thead>
+        <tr>
+          <th>START</th>
+          <th>BASIC</th>
+          <th class="highlighted">PRO</th>
+          <th>SUPER</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>5 users</td>
+          <td>10 users</td>
+          <td class="highlighted">100 users</td>
+          <td>Unlimited users</td>
+      </tr>
+      <tr>
+          <td>10 projects</td>
+          <td>50 projects</td>
+          <td class="highlighted">Unlimited projects</td>
+          <td>Unlimited projects</td>
+      </tr>
+      <tr>
+          <td>10GB amount of space</td>
+          <td>50GB amount of space</td>
+          <td class="highlighted">1TB amount of space</td>
+          <td>Unlimited amount of space</td>
+      </tr>
+      <tr>
+          <td>5 e-mail accounts</td>
+          <td>10 e-mail accounts</td>
+          <td class="highlighted">100 e-mail accounts</td>
+          <td>Unlimited e-mail accounts</td>
+      </tr>
+      <tr>
+          <td>19 &euro;</td>
+          <td>29 &euro;</td>
+          <td class="highlighted">49 &euro;</td>
+          <td>99 &euro;</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>
+        <button class="sign-up" type="button">sign up</button>
+      </td>
+      <td>
+        <button class="sign-up" type="button">sign up</button>
+      </td>
+      <td class="highlighted">
+        <button class="sign-up" type="button">sign up</button>
+      </td>
+      <td>
+        <button class="sign-up" type="button">sign up</button>
+      </td>
+      </tr>
+    </tfoot>
+      </table>
+    </div>
+</div>
 
     <!-- MUSU DARBI -->
     <div id="team">
@@ -199,10 +274,10 @@
             <p class="team-description">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
                 Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna
                 eu felis dapibus condimentum sit amet a augue</p>
-            <div class="slider">
-                <button class="active"></button>
-                <button></button>
-                <button></button>
+            <div class="slider-horizontal">
+                <button class="slider-button active"></button>
+                <button class="slider-button"></button>
+                <button class="slider-button"></button>
             </div>
             <div class="team-block-container cf">
                 <div class="one-team-block">
@@ -264,6 +339,9 @@
                     <div class="form-button">
                         <input type="submit" value="SŪTĪT ZIŅU">
                     </div>
+                    <div class="adress">
+                        Rīga, Visskaistākā iela 1 // mob: (+371) 26 27 96 07 // hello@moodcreations.eu
+                    </div>
                 </form>
             </div>
         </div>
@@ -281,7 +359,8 @@
         <script type='text/javascript'>
             function init_map() {
                 var myOptions = {
-                    zoom: 14,
+                    scrollwheel: false,
+                    zoom: 15,
                     center: new google.maps.LatLng(56.9416185, 24.093912600000067),
                     mapTypeId: google.maps.MapTypeId.ROADMAP
                 };
@@ -291,7 +370,7 @@
                     position: new google.maps.LatLng(56.9416185, 24.093912600000067)
                 });
                 infowindow = new google.maps.InfoWindow({
-                    content: '<strong>MOOD CREATIONS</strong><br>Valguma iela 6, Riga<br>'
+                    content: none
                 });
                 google.maps.event.addListener(marker, 'click', function() {
                     infowindow.open(map, marker);
