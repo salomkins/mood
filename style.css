@@ -14,6 +14,7 @@ body {
     align: center;
     font-family: 'Roboto', sans-serif;
     color: rgb(255, 255, 255);
+    min-width: 1280px;
 }
 
 * {
@@ -23,6 +24,7 @@ body {
 .main-container {
     position: fixed;
     margin: 0 auto;
+    width: 1280px;
 }
 
 .navigation-container {
@@ -49,6 +51,10 @@ body {
 .logo-text {
     float: right;
     border-bottom: 10px transparent;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    padding-left: 45px;
 }
 
 .main-nav {
@@ -97,6 +103,7 @@ body {
     text-decoration: none;
     display: inline-block;
     margin: 0 10px;
+    padding-bottom: 60px; padding-top: 60px;
 }
 
 .social i {
@@ -216,6 +223,12 @@ body {
   height: 50px;
 }
 
+.monthly-prices td{
+  font-size: 32px;
+  font-weight: 400;
+  padding: 20px;
+}
+
 .prices th{
   height: 90px;
   font-size: 20px;
@@ -290,8 +303,14 @@ button.sign-up{
     margin-right: 15px;
 }
 
+.team-social a{
+  display: inline-block;
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
 .container-contact {
-    height: 600px;
     background-image: url("media/bg-blue.svg");
     background-size: cover;
 }
@@ -429,9 +448,10 @@ button.slider-button{
 }
 
 .adress {
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 300;
-    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 70px;
 }
 
 .slider-vertical {
