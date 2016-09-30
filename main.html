@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
@@ -22,17 +22,6 @@
             });
         });
     </script>
-    <style>
-        body,
-        html,
-        .main {
-            height: 100%;
-        }
-
-        section {
-            min-height: 100%;
-        }
-    </style>
 </head>
 
 <body>
@@ -41,11 +30,11 @@
             <div class="logo-info">
                 <img src=media/logo_vertikali.png>
                 <div class="logo-text">
-                    <h2>dizaina darbnīca</h2>
+                    dizaina darbnīca
                 </div>
             </div>
             <nav class="main-nav">
-                <a class="navi" href="#header">Sākums</a>
+                <a class="navi active" href="#header">Sākums</a>
                 <a class="navi" href="#offers">Pakalpojumi</a>
                 <a class="navi" href="#our-work">Darbi</a>
                 <a class="navi" href="#team">Komanda</a>
@@ -64,12 +53,12 @@
         </div>
 
         <div class="slider-footer cf">
-            <ul class="social">
-                <li><a href="#" class="active"><i class="fa fa-twitter fa-2x"></i></a></li>
-                <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
-                <li><a href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>
-                <li><a href="#"><i class="fa fa-behance fa-2x"></i></a></li>
-            </ul>
+            <nav class="social">
+                <a href="#" class="social-main active"><i class="fa fa-twitter fa-2x"></i></a></li>
+                <a href="#" class="social-main"><i class="fa fa-facebook fa-2x"></i></a></li>
+                <a href="#" class="social-main"><i class="fa fa-dribbble fa-2x"></i></a></li>
+                <a href="#" class="social-main"><i class="fa fa-behance fa-2x"></i></a></li>
+            </nav>
         </div>
     </div>
     <!-- PAKALPOJUMU SADALA-->
@@ -112,11 +101,11 @@
                 <p>
         </div>
         <nav class="work-nav">
-            <a href=" ">viss</a>
-            <a href=" ">identitāte</a>
-            <a href=" ">web dizains</a>
-            <a href=" ">aplikāciju dizains</a>
-            <a href=" ">fotogrāfija</a>
+            <a class="work-btn active" href=" ">viss</a>
+            <a class="work-btn" href=" ">identitāte</a>
+            <a class="work-btn" href=" ">web dizains</a>
+            <a class="work-btn" href=" ">aplikāciju dizains</a>
+            <a class="work-btn" href=" ">fotogrāfija</a>
         </nav>
         <div class="slider-horizontal">
             <button class="slider-button active"></button>
@@ -227,10 +216,10 @@
   <div class="pricelist cf">
     <h1>CENRĀDIS</h1>
     <nav class="price-nav">
-        <a href=" ">identitāte</a>
-        <a href=" ">web dizains</a>
-        <a href=" ">aplikāciju dizains</a>
-        <a href=" ">fotogrāfija</a>
+        <a class="price-btn active" href=" ">identitāte</a>
+        <a class="price-btn" href=" ">web dizains</a>
+        <a class="price-btn" href=" ">aplikāciju dizains</a>
+        <a class="price-btn" href=" ">fotogrāfija</a>
     </nav>
   </div>
     <div class="table-pricelist cf">
@@ -284,7 +273,7 @@
         <button class="sign-up" type="button">sign up</button>
       </td>
       <td class="highlighted">
-        <button class="sign-up" type="button">sign up</button>
+        <button class="sign-up activated" type="button">sign up</button>
       </td>
       <td>
         <button class="sign-up" type="button">sign up</button>
