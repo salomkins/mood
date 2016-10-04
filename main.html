@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
@@ -25,22 +25,24 @@
 </head>
 
 <body>
+  <div class="navigation-container cf">
+      <div class="logo-info">
+        <a href=" ">
+          <img src=media/logo_vertikali.png>
+          <div class="logo-text">
+              dizaina darbnīca
+          </div>
+        </a>
+      </div>
+      <nav class="main-nav">
+          <a class="navi active" href="#header">Sākums</a>
+          <a class="navi" href="#offers">Pakalpojumi</a>
+          <a class="navi" href="#our-work">Darbi</a>
+          <a class="navi" href="#team">Komanda</a>
+          <a class="navi" href="#contact">Sazināties</a>
+      </nav>
+  </div>
     <div id="header" class="header">
-        <div class="navigation-container cf">
-            <div class="logo-info">
-                <img src=media/logo_vertikali.png>
-                <div class="logo-text">
-                    dizaina darbnīca
-                </div>
-            </div>
-            <nav class="main-nav">
-                <a class="navi active" href="#header">Sākums</a>
-                <a class="navi" href="#offers">Pakalpojumi</a>
-                <a class="navi" href="#our-work">Darbi</a>
-                <a class="navi" href="#team">Komanda</a>
-                <a class="navi" href="#contact">Sazināties</a>
-            </nav>
-        </div>
         <div class="slider-vertical">
             <button class="slider-button active"></button>
             <button class="slider-button"></button>
@@ -70,8 +72,7 @@
             <div class="one-offer-block">
                 <img src="media/brush.svg">
                 <h3>GRAFISKAIS DIZAINS</h3>
-                <p>Veicam plašu darbu klāstu gan jauniem uzņēmumiem (firmas stila un logo izstrāde, zīmogs, vizītkartes), gan arī
-                    < apkalpojam uzņēmumu ikdienas reklāmas vajadzībām</p>
+                <p>Veicam plašu darbu klāstu gan jauniem uzņēmumiem (firmas stila un logo izstrāde, zīmogs, vizītkartes), gan arī apkalpojam uzņēmumu ikdienas reklāmas vajadzībām</p>
             </div>
             <div class="one-offer-block">
                 <img src="media/eye.svg">
@@ -118,11 +119,13 @@
             <div class="our-work-image">
                 <img src="media/work1.jpg">
                 <div class="work-overlay">
+                  <div class="work-comments">
                   <a href=" ">
                       <i class="fa fa-bullseye fa-5x" aria-hidden="true"></i>
-                      <h3>Proin gravida nibh vel velit</h3>
-                      <h4>Fotogrāfija</h4>
+                    <div class="work-heading">Proin gravida nibh vel velit</div>
+                      Fotogrāfija
                   </a>
+                </div>
                 </div>
             </div>
         </div>
@@ -130,11 +133,13 @@
             <div class="our-work-image">
                 <img src="media/work2.jpg">
                 <div class="work-overlay">
+                  <div class="work-comments">
                   <a href=" ">
                       <i class="fa fa-bullseye fa-5x" aria-hidden="true"></i>
-                      <h3>Proin gravida nibh vel velit</h3>
-                      <h4>Fotogrāfija</h4>
+                    <div class="work-heading">Proin gravida nibh vel velit</div>
+                      Fotogrāfija
                   </a>
+                </div>
                 </div>
             </div>
         </div>
@@ -142,11 +147,13 @@
             <div class="our-work-image">
                 <img src="media/work3.jpg">
                 <div class="work-overlay">
+                  <div class="work-comments">
                   <a href=" ">
                       <i class="fa fa-bullseye fa-5x" aria-hidden="true"></i>
-                      <h3>Proin gravida nibh vel velit</h3>
-                      <h4>Fotogrāfija</h4>
+                    <div class="work-heading">Proin gravida nibh vel velit</div>
+                      Fotogrāfija
                   </a>
+                </div>
                 </div>
             </div>
         </div>
@@ -154,11 +161,13 @@
             <div class="our-work-image">
                 <img src="media/work4.jpg">
                 <div class="work-overlay">
+                  <div class="work-comments">
                   <a href=" ">
                       <i class="fa fa-bullseye fa-5x" aria-hidden="true"></i>
-                      <h3>Proin gravida nibh vel velit</h3>
-                      <h4>Fotogrāfija</h4>
+                    <div class="work-heading">Proin gravida nibh vel velit</div>
+                      Fotogrāfija
                   </a>
+                </div>
                 </div>
             </div>
         </div>
@@ -166,11 +175,13 @@
             <div class="our-work-image">
                 <img src="media/work5.jpg">
                 <div class="work-overlay">
+                  <div class="work-comments">
                   <a href=" ">
                       <i class="fa fa-bullseye fa-5x" aria-hidden="true"></i>
-                      <h3>Proin gravida nibh vel velit</h3>
-                      <h4>Fotogrāfija</h4>
+                    <div class="work-heading">Proin gravida nibh vel velit</div>
+                      Fotogrāfija
                   </a>
+                </div>
                 </div>
             </div>
         </div>
@@ -178,11 +189,13 @@
             <div class="our-work-image">
                 <img src="media/work6.jpg">
                 <div class="work-overlay">
-                    <a href=" ">
-                        <i class="fa fa-bullseye fa-5x" aria-hidden="true"></i>
-                        <h3>Proin gravida nibh vel velit</h3>
-                        <h4>Fotogrāfija</h4>
-                    </a>
+                  <div class="work-comments">
+                  <a href=" ">
+                      <i class="fa fa-bullseye fa-5x" aria-hidden="true"></i>
+                    <div class="work-heading">Proin gravida nibh vel velit</div>
+                      Fotogrāfija
+                  </a>
+                </div>
                 </div>
             </div>
         </div>
@@ -190,11 +203,13 @@
             <div class="our-work-image">
                 <img src="media/work7.jpg">
                 <div class="work-overlay">
+                  <div class="work-comments">
                   <a href=" ">
                       <i class="fa fa-bullseye fa-5x" aria-hidden="true"></i>
-                      <h3>Proin gravida nibh vel velit</h3>
-                      <h4>Fotogrāfija</h4>
+                    <div class="work-heading">Proin gravida nibh vel velit</div>
+                      Fotogrāfija
                   </a>
+                </div>
                 </div>
             </div>
         </div>
@@ -202,11 +217,13 @@
             <div class="our-work-image">
                 <img src="media/work8.jpg">
                 <div class="work-overlay">
+                  <div class="work-comments">
                   <a href=" ">
                       <i class="fa fa-bullseye fa-5x" aria-hidden="true"></i>
-                      <h3>Proin gravida nibh vel velit</h3>
-                      <h4>Fotogrāfija</h4>
+                    <div class="work-heading">Proin gravida nibh vel velit</div>
+                      Fotogrāfija
                   </a>
+                </div>
                 </div>
             </div>
         </div>
@@ -301,61 +318,81 @@
                     <div class="team-image">
                         <img src="media/team1.jpg">
                         <div class="team-overlay">
-                            Proin gravida nibh vel velit auctor aliquet
-                            <div class="team-social">
-                              <a href="#" class="active"><i class="fa fa-twitter"></i></a>
-                              <a href="#" class="active"><i class="fa fa-facebook"></i></a>
-                              <a href="#" class="active"><i class="fa fa-dribbble"></i></a>
+                            <div class="team-comments">
+                              <div class="team-heading">
+                                Proin gravida nibh vel velit auctor aliquet
+                              </div>
+                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+                            </div>
+                            <div class="team-social-blocks">
+                              <a href="#" class="team-social"><i class="fa fa-twitter"></i></a>
+                              <a href="#" class="team-social"><i class="fa fa-facebook"></i></a>
+                              <a href="#" class="team-social"><i class="fa fa-dribbble"></i></a>
                             </div>
                         </div>
                     </div>
-                    <h3>Jānis Pirmais</h3>
-                    <h4>Izpilddirektors</h4>
+                    <div class="team-member">Jānis Pirmais</div>
+                    <div class="team-position">Izpilddirektors</div>
                 </div>
                 <div class="one-team-block">
                     <div class="team-image">
                         <img src="media/team2.jpg">
                         <div class="team-overlay">
-                            Proin gravida nibh vel velit auctor aliquet
-                            <div class="team-social">
-                              <a href="#" class="active"><i class="fa fa-twitter"></i></a>
-                              <a href="#" class="active"><i class="fa fa-facebook"></i></a>
-                              <a href="#" class="active"><i class="fa fa-dribbble"></i></a>
+                          <div class="team-comments">
+                            <div class="team-heading">
+                              Proin gravida nibh vel velit auctor aliquet
+                            </div>
+                              Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+                          </div>
+                            <div class="team-social-blocks">
+                              <a href="#" class="team-social"><i class="fa fa-twitter"></i></a>
+                              <a href="#" class="team-social"><i class="fa fa-facebook"></i></a>
+                              <a href="#" class="team-social"><i class="fa fa-dribbble"></i></a>
                             </div>
                         </div>
-                        <h3>Annija Otrā</h3>
-                        <h4>Grafiskā dizainere</h4>
+                        <div class="team-member">Annija Otrā</div>
+                        <div class="team-position">Grafiskā dizainere</div>
                     </div>
                 </div>
                 <div class="one-team-block">
                     <div class="team-image">
                         <img src="media/team3.jpg">
                         <div class="team-overlay">
-                            Proin gravida nibh vel velit auctor aliquet
-                            <div class="team-social">
-                              <a href="#" class="active"><i class="fa fa-twitter"></i></a>
-                              <a href="#" class="active"><i class="fa fa-facebook"></i></a>
-                              <a href="#" class="active"><i class="fa fa-dribbble"></i></a>
+                          <div class="team-comments">
+                            <div class="team-heading">
+                              Proin gravida nibh vel velit auctor aliquet
+                            </div>
+                              Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+                          </div>
+                            <div class="team-social-blocks">
+                              <a href="#" class="team-social"><i class="fa fa-twitter"></i></a>
+                              <a href="#" class="team-social"><i class="fa fa-facebook"></i></a>
+                              <a href="#" class="team-social"><i class="fa fa-dribbble"></i></a>
                             </div>
                         </div>
                     </div>
-                    <h3>Kristaps Trešais</h3>
-                    <h4>Front-end izstrādātājs</h4>
+                    <div class="team-member">Kristaps Trešais</div>
+                    <div class="team-position">Front-end izstrādātājs</div>
                 </div>
                 <div class="one-team-block">
                     <div class="team-image">
                         <img src="media/team4.jpg">
                         <div class="team-overlay">
-                            Proin gravida nibh vel velit auctor aliquet
-                            <div class="team-social">
-                              <a href="#" class="active"><i class="fa fa-twitter"></i></a>
-                              <a href="#" class="active"><i class="fa fa-facebook"></i></a>
-                              <a href="#" class="active"><i class="fa fa-dribbble"></i></a>
+                          <div class="team-comments">
+                            <div class="team-heading">
+                              Proin gravida nibh vel velit auctor aliquet
+                            </div>
+                              Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+                          </div>
+                            <div class="team-social-blocks">
+                              <a href="#" class="team-social"><i class="fa fa-twitter"></i></a>
+                              <a href="#" class="team-social"><i class="fa fa-facebook"></i></a>
+                              <a href="#" class="team-social"><i class="fa fa-dribbble"></i></a>
                             </div>
                         </div>
                     </div>
-                    <h3>Ketija Ceturtā</h3>
-                    <h4>UI/UX dizainere</h4>
+                    <div class="team-member">Ketija Ceturtā</div>
+                    <div class="team-position">UI/UX dizainere</div>
                 </div>
             </div>
         </div>
