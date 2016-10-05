@@ -20,7 +20,6 @@ body {
     min-width: 1140px;
 }
 
-
 .main-container {
     position: fixed;
     margin: 0 auto;
@@ -34,7 +33,6 @@ body {
     position: fixed;
     left: 0; right: 0;
     z-index: 999;
-    top: 0;
 }
 
 .header {
@@ -61,7 +59,6 @@ body {
 }
 
 .main-nav {
-    text-decoration: none;
     padding: 0 50px;
 }
 
@@ -113,9 +110,8 @@ body {
 }
 
 .container-offers {
-    height: auto;
     background-color: #d33523;
-    text-align: center;
+    padding-bottom: 60px;
 }
 
 .offer-blocks-container{
@@ -128,19 +124,11 @@ body {
     float: left;
     padding-left: 30px;
     padding-bottom: 50px;
-    vertical-align: top;
-    margin: auto;
-    position: relative;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
 }
 
 .container-work {
     background-image: url("../media/bg-green.svg");
     background-size: cover;
-    text-align: center;
 }
 
 .description-work {
@@ -170,9 +158,6 @@ body {
     right: 0;
     left: 0;
     visibility: hidden;
-    font-family: roboto;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
 }
 
 .our-work-image:hover .work-overlay {
@@ -313,7 +298,6 @@ button.sign-up:hover, button.activated, .sign-up button.activated{
 
 .team-container {
     background-color: #57aa68;
-    height: 790px;
 }
 
 .team-description {
@@ -334,29 +318,16 @@ button.sign-up:hover, button.activated, .sign-up button.activated{
     right: 0;
     left: 0;
     visibility: hidden;
-    font-family: roboto;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
 }
 
 .team-image:hover .team-overlay {
     visibility: visible;
 }
 
-.team-block-container {
-    margin: auto;
-    text-align: center;
-}
-
 .one-team-block {
-    width: 270px;
     display: inline-block;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin-left: 15px;
-    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .team-social {
@@ -403,6 +374,7 @@ button.sign-up:hover, button.activated, .sign-up button.activated{
     font-size: 13px;
     font-weight: 400;
     line-height: 24px;
+    padding-bottom: 80px;
 }
 
 .container-contact {
@@ -410,17 +382,11 @@ button.sign-up:hover, button.activated, .sign-up button.activated{
     background-size: cover;
 }
 
-.map-container {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
 .copyright {
-    height: 43px;
     color: rgba(255, 255, 255, 0.5);
     background-color: #2e2d6b;
-    padding-top: 16px;
+    padding-top: 35px;
+    padding-bottom: 30px;
     font-size: 13px;
 }
 
@@ -458,15 +424,11 @@ a {
     line-height: 30px;
 }
 
-#contact-form {
-    background-color: transparent;
-}
-
 input[type="text"] {
     font-size: 13px;
+    color: rgb(255, 255, 255);
     line-height: 24px;
     font-family: inherit;
-    color: rgba(255, 255, 255, 0.7);
     padding-left: 14px;
     background: #3e4a85;
     opacity: 0.7;
@@ -478,6 +440,7 @@ input[type="text"] {
 
 textarea[type="textarea"] {
     font-size: 13px;
+    color: rgb(255, 255, 255);
     font-family: inherit;
     line-height: 24px;
     rgba(255, 255, 255, 0.7);
@@ -523,10 +486,6 @@ button.slider-button{
 
 .slider-horizontal button:hover, button.active, .slider-horizontal button.active {
     background-color: rgb(255, 255, 255);
-}
-
-.contact-form {
-    width: 100%;
 }
 
 .adress {
