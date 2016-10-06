@@ -238,12 +238,7 @@ body, input, textarea, button {
 }
 
 .pricelist {
-  background:
-      linear-gradient(
-        rgba(111, 250, 255, 0.5),
-        rgba(111, 250, 255, 0.5)
-      ),
-      url("../media/bg-green.svg");
+      background-image: url("../media/bg-green-overlay.svg");
       background-size: cover;
   }
 
@@ -264,7 +259,7 @@ body, input, textarea, button {
 }
 
 .prices td{
-  height: 50px;
+ padding: 20px;
 }
 
 .monthly-prices td{
@@ -274,9 +269,10 @@ body, input, textarea, button {
 }
 
 .prices th{
-  height: 90px;
   font-size: 20px;
   font-weight: 400;
+  padding-top: 45px;
+  padding-bottom: 30px;
 }
 
 .prices tfoot td{
@@ -438,7 +434,7 @@ input[type="text"] {
     font-size: 13px;
     color: rgb(255, 255, 255);
     line-height: 24px;
-    padding-left: 14px;
+    padding: 10px;
     background: #3e4a85;
     opacity: 0.7;
     border: 2px;
@@ -453,7 +449,7 @@ textarea[type="textarea"] {
     line-height: 24px;
     rgba(255, 255, 255, 0.7);
     height: 232px;
-    padding-left: 14px;
+    padding: 10px;
     background: #3e4a85;
     opacity: 0.7;
     border: 2px;
