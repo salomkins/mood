@@ -1,9 +1,8 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
+
 .cf:before, .cf:after {
     content: "";
     display: table;
@@ -23,12 +22,13 @@ body, input, textarea, button {
   font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+.section-title {
     color: #fffefe;
     font-size: 30px;
     font-weight: 400;
-    padding-top: 80px;
+    padding-top: 110px;
     padding-bottom: 60px;
+    text-transform: uppercase;
 }
 
 p {
@@ -39,20 +39,13 @@ p {
     line-height: 24px;
 }
 
-a {
+a, a:link, a:visited {
     text-decoration: none;
     color: #ffffff;
     font-weight: 300;
-    line-height: 30px;
 }
 
 /*<!-- ========================NAVIGATION&HEADER======================================== -->*/
-
-.main-container {
-    position: fixed;
-    margin: 0 auto;
-    width: 1280px;
-}
 
 .navigation-container {
     background-color: rgba(211, 53, 35, 0.9);
@@ -67,6 +60,7 @@ a {
     background-image: url("../media/bg-red.svg");
     background-size: cover;
     position: relative;
+    background-position: center;
 }
 
 .logo-info {
@@ -92,7 +86,6 @@ a {
 
 .navi {
     display: inline-block;
-    text-decoration: none;
     text-align: center;
     line-height: 65px;
     padding-left: 15px;
@@ -110,10 +103,6 @@ a {
 .title-container {
     height: 80px;
     background-color: #d33523;
-}
-
-.slider-main {
-    clear: both;
 }
 
 .slider-main img{
@@ -135,16 +124,23 @@ a {
 }
 
 .main-description {
-    padding-left: 170px;
-    padding-right: 170px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
+    line-height: 1.6;
+    width: 1100px;
+    margin: auto;
+    padding-left: 95px;
+    padding-right: 95px;
+}
+
+.social{
+  padding-top: 50px;
+  padding-bottom: 60px;
 }
 
 .social a{
     display: inline-block;
     margin: 0 10px;
-    padding-bottom: 60px; padding-top: 60px;
 }
 
 .social .social-main {
@@ -160,7 +156,7 @@ a {
 /*<!-- ========================OFFERS SECTION======================================== -->*/
 .container-offers {
     background-color: #d33523;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
 }
 
 .offer-blocks-container{
@@ -171,8 +167,27 @@ a {
 .one-offer-block {
     width: 25%;
     float: left;
-    padding-left: 30px;
-    padding-bottom: 50px;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+.offer-heading{
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 35px;
+  padding-top: 20px;
+}
+
+.offer-description{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+img .one-offer-block{
+  padding-bottom: 20px;
 }
 /*<!-- ========================OFFERS SECTION END======================================== -->*/
 
@@ -181,11 +196,17 @@ a {
 .container-work {
     background-image: url("../media/bg-green.svg");
     background-size: cover;
+    background-position: center;
 }
 
 .description-work {
-    padding-left: 163px;
-    padding-right: 163px;
+    width: 1140px;
+    margin: auto;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
 }
 
 .our-work-block {
@@ -221,7 +242,7 @@ a {
 }
 
 .work-nav a {
-    margin-right: 50px;
+    margin: 25px;
     text-transform: uppercase;
     border: 1px solid transparent;
 }
@@ -271,7 +292,7 @@ button.slider-button{
 }
 
 .slider-horizontal {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -283,14 +304,15 @@ button.slider-button{
 
 /*<!-- ========================PRICELIST SECTION======================================== -->*/
 .price-nav a {
-    margin-right: 50px;
+    margin-right: 25px;
+    margin-left: 25px;
     text-transform: uppercase;
     border: 1px solid transparent;
 }
 
 .price-nav{
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
 }
 
 .price-nav .price-btn {
@@ -307,14 +329,15 @@ button.slider-button{
 .pricelist {
       background-image: url("../media/bg-green-overlay.svg");
       background-size: cover;
+      background-position: center;
   }
 
 .table-pricelist{
   background-color: rgb(42, 87, 89);
 }
 .prices{
-  width: 86vw;
-  margin: 0 auto;
+  width: 1140px;
+  margin: auto;
   border-collapse: collapse;
 }
 
@@ -327,6 +350,10 @@ button.slider-button{
 
 .prices td{
  padding: 20px;
+}
+
+.prices th{
+ text-transform: uppercase;
 }
 
 .monthly-prices td{
@@ -372,16 +399,22 @@ button.sign-up:hover, button.activated, .sign-up button.activated{
 /*<!-- ========================TEAM SECTION======================================== -->*/
 .team-container {
     background-color: #57aa68;
+    font-size: 0;
 }
 
 .team-description {
-    padding-left: 160px;
-    padding-right: 160px;
+    width: 1140px;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .team-image {
     position: relative;
-    height: 300px;
+    height: auto;
 }
 
 .team-overlay {
@@ -400,8 +433,9 @@ button.sign-up:hover, button.activated, .sign-up button.activated{
 
 .one-team-block {
     display: inline-block;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
 }
 
 .team-block-container{
@@ -448,7 +482,7 @@ button.sign-up:hover, button.activated, .sign-up button.activated{
 .team-member{
     font-size: 18px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.33;
     padding-top: 30px;
 }
 
@@ -456,7 +490,7 @@ button.sign-up:hover, button.activated, .sign-up button.activated{
     opacity: 0.56;
     font-size: 13px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.84;
 }
 /*<!-- ========================TEAM SECTION END======================================== -->*/
 
@@ -465,6 +499,7 @@ button.sign-up:hover, button.activated, .sign-up button.activated{
 .container-contact {
     background-image: url("../media/bg-blue.svg");
     background-size: cover;
+    background-position: center;
 }
 
 .contact-form{
@@ -472,17 +507,20 @@ button.sign-up:hover, button.activated, .sign-up button.activated{
   margin: auto;
 }
 
+.form-row{
+  margin-bottom: 10px;
+  }
+
 input[type="text"] {
     font-size: 13px;
     color: rgb(255, 255, 255);
-    line-height: 24px;
+    line-height: 1.85;
     padding: 10px;
     background: #3e4a85;
     opacity: 0.7;
     border: 2px;
-    margin-bottom: 10px;
-    border-radius: 4px;
     width: 100%;
+    border-radius: 4px;
 }
 
 textarea[type="textarea"] {
@@ -519,7 +557,7 @@ textarea[type="textarea"] {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.adress {
+.address {
     font-size: 18px;
     font-weight: 300;
     padding-top: 40px;
@@ -533,7 +571,9 @@ textarea[type="textarea"] {
     color: rgba(255, 255, 255, 0.5);
     background-color: #2e2d6b;
     padding-top: 35px;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
     font-size: 13px;
+    font-weight: 300;
+    line-height: 2.3;
 }
 /*<!-- ========================PAGE FOOTER END======================================== -->*/
