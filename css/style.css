@@ -23,6 +23,31 @@ body, input, textarea, button {
   font-family: 'Roboto', sans-serif;
 }
 
+h1 {
+    color: #fffefe;
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+p {
+    text-align: center;
+    font-weight: 200;
+    color: #fffefe;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+/*<!-- ========================NAVIGATION&HEADER======================================== -->*/
+
 .main-container {
     position: fixed;
     margin: 0 auto;
@@ -95,6 +120,20 @@ body, input, textarea, button {
   max-width: 100%;
 }
 
+.slider-vertical {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    width: 0;
+    position: absolute;
+    top: 50%;
+    right: 4%;
+    transform: translateY(-50%);
+}
+
+.slider-vertical button:hover, button.active, .slider-vertical button.active {
+    background-color: rgb(255, 255, 255);
+}
+
 .main-description {
     padding-left: 170px;
     padding-right: 170px;
@@ -115,7 +154,10 @@ body, input, textarea, button {
 .social-main:hover, .social-main.active {
   color: rgba(255, 255, 255, 0.8);
 }
+/*<!-- ========================NAVIGATION&HEADER END======================================== -->*/
 
+
+/*<!-- ========================OFFERS SECTION======================================== -->*/
 .container-offers {
     background-color: #d33523;
     padding-bottom: 60px;
@@ -132,7 +174,10 @@ body, input, textarea, button {
     padding-left: 30px;
     padding-bottom: 50px;
 }
+/*<!-- ========================OFFERS SECTION END======================================== -->*/
 
+
+/*<!-- ========================OUR WORK SECTION======================================== -->*/
 .container-work {
     background-image: url("../media/bg-green.svg");
     background-size: cover;
@@ -215,6 +260,28 @@ body, input, textarea, button {
   display: block;
 }
 
+button.slider-button{
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 10px;
+    padding: 0;
+    background-color: transparent;
+}
+
+.slider-horizontal {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.slider-horizontal button:hover, button.active, .slider-horizontal button.active {
+    background-color: rgb(255, 255, 255);
+}
+/*<!-- ========================OUR WORK SECTION END======================================== -->*/
+
+
+/*<!-- ========================PRICELIST SECTION======================================== -->*/
 .price-nav a {
     margin-right: 50px;
     text-transform: uppercase;
@@ -299,7 +366,10 @@ body, input, textarea, button {
 button.sign-up:hover, button.activated, .sign-up button.activated{
   background-color: rgb(71, 133, 135);
 }
+/*<!-- ========================PRICELIST SECTION END======================================== -->*/
 
+
+/*<!-- ========================TEAM SECTION======================================== -->*/
 .team-container {
     background-color: #57aa68;
 }
@@ -388,52 +458,13 @@ button.sign-up:hover, button.activated, .sign-up button.activated{
     font-weight: 400;
     line-height: 24px;
 }
+/*<!-- ========================TEAM SECTION END======================================== -->*/
 
+
+/*<!-- ========================CONTACT FORM SECTION======================================== -->*/
 .container-contact {
     background-image: url("../media/bg-blue.svg");
     background-size: cover;
-}
-
-.copyright {
-    color: rgba(255, 255, 255, 0.5);
-    background-color: #2e2d6b;
-    padding-top: 35px;
-    padding-bottom: 30px;
-    font-size: 13px;
-}
-
-h1 {
-    color: #fffefe;
-    font-size: 30px;
-    font-weight: 400;
-    padding-top: 80px;
-    padding-bottom: 60px;
-}
-
-h2 {
-    text-align: center;
-    font-weight: 200;
-    color: #fffefe;
-    font-size: 18px;
-    line-height: 30px;
-    padding-left: 10px;
-}
-
-
-
-p {
-    text-align: center;
-    font-weight: 200;
-    color: #fffefe;
-    font-size: 18px;
-    line-height: 24px;
-}
-
-a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 300;
-    line-height: 30px;
 }
 
 .contact-form{
@@ -488,42 +519,21 @@ textarea[type="textarea"] {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.slider-horizontal {
-    padding-top: 40px;
-    padding-bottom: 30px;
-}
-
-button.slider-button{
-    border-radius: 50%;
-    width: 8px;
-    height: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    margin: 10px;
-    padding: 0;
-    background-color: transparent;
-}
-
-.slider-horizontal button:hover, button.active, .slider-horizontal button.active {
-    background-color: rgb(255, 255, 255);
-}
-
 .adress {
     font-size: 18px;
     font-weight: 300;
     padding-top: 40px;
     padding-bottom: 70px;
 }
+/*<!-- ========================CONTACT FORM SECTION END======================================== -->*/
 
-.slider-vertical {
-    padding-top: 40px;
+
+/*<!-- ========================PAGE FOOTER======================================== -->*/
+.copyright {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #2e2d6b;
+    padding-top: 35px;
     padding-bottom: 30px;
-    width: 0;
-    position: absolute;
-    top: 50%;
-    right: 4%;
-    transform: translateY(-50%);
+    font-size: 13px;
 }
-
-.slider-vertical button:hover, button.active, .slider-vertical button.active {
-    background-color: rgb(255, 255, 255);
-}
+/*<!-- ========================PAGE FOOTER END======================================== -->*/
