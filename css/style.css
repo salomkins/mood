@@ -414,7 +414,7 @@ button.sign-up:hover, button.activated, .sign-up button.activated{
 
 .team-image {
     position: relative;
-    height: auto;
+    height: 290px;
 }
 
 .team-overlay {
