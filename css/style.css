@@ -22,6 +22,11 @@ body, input, textarea, button {
   font-family: 'Roboto', sans-serif;
 }
 
+.main-site-width{
+  width: 1140px;
+  margin: 0 auto;
+}
+
 .section-title {
     color: #fffefe;
     font-size: 30px;
@@ -67,7 +72,6 @@ a, a:link, a:visited {
     height: 70px;
     float: left;
     padding-top: 10px;
-    padding-left: 50px;
 }
 
 .logo-text {
@@ -78,10 +82,6 @@ a, a:link, a:visited {
     font-size: 14px;
     font-weight: 300;
     margin-left: 10px;
-}
-
-.main-nav {
-    padding: 0 50px;
 }
 
 .navi {
@@ -327,7 +327,7 @@ button.slider-button{
   border-radius: 5px;
 }
 
-.pricelist {
+.pricelist{
       background-image: url("../media/bg-green-overlay.svg");
       background-size: cover;
       background-position: center;
