@@ -123,6 +123,18 @@ a, a:link, a:visited {
     background-color: rgb(255, 255, 255);
 }
 
+.slider-items{
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.slider-item {
+  white-space: normal;
+  height: 100%;
+  vertical-align: top;
+  transition: transform .5s ease-in-out;
+}
+
 .main-description {
     font-size: 20px;
     font-weight: 300;
@@ -241,10 +253,12 @@ img .one-offer-block{
   padding-top: 40px;
 }
 
-.work-nav a {
+.work-btn {
     margin: 25px;
     text-transform: uppercase;
     border: 1px solid transparent;
+    background-color: transparent;
+    color: #fff;
 }
 
 .work-nav .work-btn {
@@ -256,6 +270,7 @@ img .one-offer-block{
 .work-btn:hover, .work-btn.active {
   border: 1px solid;
   border-radius: 5px;
+  background-color: transparent;
 }
 
 .work-heading{
@@ -413,6 +428,20 @@ button.sign-up:hover, button.activated, .sign-up button.activated{
     padding-right: 80px;
 }
 
+.team-items{
+  max-height: 365px;
+  overflow: hidden;
+  /*white-space: nowrap;*/
+}
+
+.team-slider-item {
+  white-space: normal;
+  /*display: inline-block;*/
+  width: 100%;
+  vertical-align: top;
+  transition: transform .5s ease-in-out;
+}
+
 .team-image {
     position: relative;
     height: 290px;
@@ -534,7 +563,6 @@ textarea[type="textarea"] {
     background: #3e4a85;
     opacity: 0.7;
     border: 2px;
-    margin-bottom: 10px;
     border-radius: 4px;
     width: 100%;
 }
@@ -548,6 +576,7 @@ textarea[type="textarea"] {
     background: transparent;
     border: 2px solid white;
     border-radius: 6px;
+    margin-top: 10px;
     width: 100%;
     height: 35px;
     text-transform: uppercase;
@@ -556,6 +585,19 @@ textarea[type="textarea"] {
 
 .submit:hover{
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.form-field{
+  position: relative;
+}
+
+.form-field.error{
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+.errorContainer{
+  display: inline-block;
 }
 
 .address {

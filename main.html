@@ -7,126 +7,226 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $("a").on('click', function(event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    var hash = this.hash;
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function() {
-                        window.location.hash = hash;
-                    });
-                }
-            });
-        });
-    </script>
 </head>
 
 <body>
     <!-- ========================NAVIGATION&HEADER======================================== -->
-    <div class="navigation-container">
-      <div class="main-site-width">
-        <div class="logo-info">
-            <a href=" ">
-                <img src="media/logo_vertikali.png" alt="logo">
-                <div class="logo-text">
-                    dizaina darbnīca
-                </div>
-            </a>
-        </div>
-        <nav class="main-nav">
-            <a class="navi active" href="#header">Sākums</a>
-            <a class="navi" href="#offers">Pakalpojumi</a>
-            <a class="navi" href="#our-work">Darbi</a>
-            <a class="navi" href="#team">Komanda</a>
-            <a class="navi" href="#contact">Sazināties</a>
-        </nav>
-      </div>
-    </div>
-    <div id="header" class="header">
-      <div class="main-site-width">
-        <div class="slider-vertical">
-            <button class="slider-button active"></button>
-            <button class="slider-button"></button>
-            <button class="slider-button"></button>
-        </div>
-        <div class="slider-main">
-            <img src="media/Logo-horizontali.png" alt="logo-horizontali">
-            <div class="main-description">Mēs ticam, ka esam paveikuši savu darbu labi, ja klients iegūst efektīvu un viegli lietojamu instrumentu - vai tas būtu mājas lapas prototips, makets, logotips - kas palīdz sasniegt nepieciešamo rezultātu - pārdot preci, izglītot, izklaidēt
-                vai informēt.</div>
-        </div>
-
-        <div class="slider-footer">
-            <nav class="social">
-                <a href="#" class="social-main active"><i class="fa fa-twitter fa-2x"></i></a></li>
-                <a href="#" class="social-main"><i class="fa fa-facebook fa-2x"></i></a></li>
-                <a href="#" class="social-main"><i class="fa fa-dribbble fa-2x"></i></a></li>
-                <a href="#" class="social-main"><i class="fa fa-behance fa-2x"></i></a></li>
+    <div class="navigation-container" id="top">
+        <div class="main-site-width">
+            <div class="logo-info">
+                <a href="#header">
+                    <img src="media/logo_vertikali.png" alt="logo">
+                    <div class="logo-text">
+                        dizaina darbnīca
+                    </div>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <a class="navi active" href="#header">Sākums</a>
+                <a class="navi" href="#offers">Pakalpojumi</a>
+                <a class="navi" href="#our-work">Darbi</a>
+                <a class="navi" href="#team">Komanda</a>
+                <a class="navi" href="#contact">Sazināties</a>
             </nav>
         </div>
-      </div>
+    </div>
+    <div id="header" class="header">
+        <div class="main-site-width">
+
+            <div class="slider-main" id="main-slider">
+              <div class="slider-vertical">
+              </div>
+              <div class="slider-items">
+              <div class="slider-item">
+                <img src="media/Logo-horizontali.png" alt="logo-horizontali">
+                <div class="main-description">Mēs ticam, ka esam paveikuši savu darbu labi, ja klients iegūst efektīvu un viegli lietojamu instrumentu - vai tas būtu mājas lapas prototips, makets, logotips - kas palīdz sasniegt nepieciešamo rezultātu - pārdot preci, izglītot, izklaidēt
+                    vai informēt.</div>
+              </div>
+              <div class="slider-item">
+                <img src="media/Logo-horizontali.png" alt="logo-horizontali">
+                <div class="main-description">Mēs ticam, ka esam paveikuši savu darbu labi, ja klients iegūst efektīvu un viegli lietojamu instrumentu - vai tas būtu mājas lapas prototips, makets, logotips - kas palīdz sasniegt nepieciešamo rezultātu - pārdot preci, izglītot, izklaidēt
+                    vai informēt.</div>
+              </div>
+              <div class="slider-item">
+                <img src="media/Logo-horizontali.png" alt="logo-horizontali">
+                <div class="main-description">Mēs ticam, ka esam paveikuši savu darbu labi, ja klients iegūst efektīvu un viegli lietojamu instrumentu - vai tas būtu mājas lapas prototips, makets, logotips - kas palīdz sasniegt nepieciešamo rezultātu - pārdot preci, izglītot, izklaidēt
+                    vai informēt.</div>
+              </div>
+            </div>
+            </div>
+
+            <div class="slider-footer">
+                <nav class="social">
+                    <a href="#" class="social-main active"><i class="fa fa-twitter fa-2x"></i></a></li>
+                    <a href="#" class="social-main"><i class="fa fa-facebook fa-2x"></i></a></li>
+                    <a href="#" class="social-main"><i class="fa fa-dribbble fa-2x"></i></a></li>
+                    <a href="#" class="social-main"><i class="fa fa-behance fa-2x"></i></a></li>
+                </nav>
+            </div>
+        </div>
     </div>
     <!-- ========================NAVIGATION&HEADER END======================================== -->
 
     <!-- ========================OFFERS SECTION======================================== -->
     <div id="offers" class="container-offers cf">
-      <div class="main-site-width">
-        <div class="container-title">
-            <div class="section-title">pakalpojumi</div>
+        <div class="main-site-width">
+            <div class="container-title">
+                <div class="section-title">pakalpojumi</div>
+            </div>
+            <div class="offer-blocks-container">
+                <div class="main-site-width">
+                    <div class="one-offer-block">
+                        <img src="media/brush.svg" alt="brush">
+                        <div class="offer-heading">grafiskais dizains</div>
+                        <div class="offer-description">Veicam plašu darbu klāstu gan jauniem uzņēmumiem (firmas stila un logo izstrāde, zīmogs, vizītkartes), gan arī apkalpojam uzņēmumu ikdienas reklāmas vajadzībām</div>
+                    </div>
+                    <div class="one-offer-block">
+                        <img src="media/eye.svg" alt="eye">
+                        <div class="offer-heading">poligrāfija</div>
+                        <div class="offer-description">Mēs sadarbojamies ar labākajām tipogrāfijām un digitālās drukas centriem un nodrošinām to, ka klients iegūst ne tikai maketu vai salikumu, bet gatavu produktu – bukletu, vizītkarti, plakātu un tml.</div>
+                    </div>
+                    <div class="one-offer-block">
+                        <img src="media/uiux.svg" alt="uiux">
+                        <div class="offer-heading">ui/ux dizains</div>
+                        <div class="offer-description">Veidojam tīmekļa un aplikāciju vizuālo un lietojamības dizainu lai lietotājs ātri un ērti var iegūt nepieciešamo informāciju</div>
+                    </div>
+                    <div class="one-offer-block">
+                        <img src="media/camera.svg" alt="camera">
+                        <div class="offer-heading">foto / video apstrāde</div>
+                        <div class="offer-description">Fotografējam produktus un produktu kompozīcijas, interjerus, objektus un vietas reklāmas vajadzībām. Veicam fotoapstrādi, kā arī video montāžu un apstrādi</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="offer-blocks-container">
-          <div class="main-site-width">
-            <div class="one-offer-block">
-                <img src="media/brush.svg" alt="brush">
-                <div class="offer-heading">grafiskais dizains</div>
-                <div class="offer-description">Veicam plašu darbu klāstu gan jauniem uzņēmumiem (firmas stila un logo izstrāde, zīmogs, vizītkartes), gan arī apkalpojam uzņēmumu ikdienas reklāmas vajadzībām</div>
-            </div>
-            <div class="one-offer-block">
-                <img src="media/eye.svg" alt="eye">
-                <div class="offer-heading">poligrāfija</div>
-                <div class="offer-description">Mēs sadarbojamies ar labākajām tipogrāfijām un digitālās drukas centriem un nodrošinām to, ka klients iegūst ne tikai maketu vai salikumu, bet gatavu produktu – bukletu, vizītkarti, plakātu un tml.</div>
-            </div>
-            <div class="one-offer-block">
-                <img src="media/uiux.svg" alt="uiux">
-                <div class="offer-heading">ui/ux dizains</div>
-                <div class="offer-description">Veidojam tīmekļa un aplikāciju vizuālo un lietojamības dizainu lai lietotājs ātri un ērti var iegūt nepieciešamo informāciju</div>
-            </div>
-            <div class="one-offer-block">
-                <img src="media/camera.svg" alt="camera">
-                <div class="offer-heading">foto / video apstrāde</div>
-                <div class="offer-description">Fotografējam produktus un produktu kompozīcijas, interjerus, objektus un vietas reklāmas vajadzībām. Veicam fotoapstrādi, kā arī video montāžu un apstrādi</div>
-            </div>
-        </div>
-      </div>
-    </div>
     </div>
     <!-- ========================OFFERS SECTION END======================================== -->
 
     <!-- ========================OUR WORK SECTION======================================== -->
     <div id="our-work" class="container-work cf">
-      <div class="main-site-width">
-        <div class="section-title">mūsu darbi</div>
-        <div class="description-work cf">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+        <div class="main-site-width">
+            <div class="section-title">mūsu darbi</div>
+            <div class="description-work cf">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
                 Nam nec tellus a odio tincidunt auctor a ornare odio.
+            </div>
+
+            <script>
+                var categories = [
+                    "Identitāte",
+                    "Web dizains",
+                    "Aplikāciju dizains",
+                    "Fotogrāfija"
+                ];
+
+
+                // for (var i = 0; i < categories.length; i++) {
+                //   document.write("<button data-workid='" + i + "'>" + categories[i] + "</button>");
+                // }
+
+
+                var items = [{
+                        workid: 0,
+                        title: "Proin gravida nibh vel velit",
+                        slug: "work1",
+                        image: "media/work1.jpg",
+                    },
+
+                    {
+                        workid: 2,
+                        title: "Proin gravida nibh vel velit",
+                        slug: "work2",
+                        image: "media/work2.jpg",
+                    },
+
+                    {
+                        workid: 1,
+                        title: "Proin gravida nibh vel velit",
+                        slug: "work3",
+                        image: "media/work3.jpg",
+                    },
+
+                    {
+                        workid: 3,
+                        title: "Proin gravida nibh vel velit",
+                        slug: "work4",
+                        image: "media/work4.jpg",
+                    },
+
+                    {
+                        workid: 1,
+                        title: "Proin gravida nibh vel velit",
+                        slug: "work5",
+                        image: "media/work5.jpg",
+                    },
+
+                    {
+                        workid: 2,
+                        title: "Proin gravida nibh vel velit",
+                        slug: "work6",
+                        image: "media/work6.jpg",
+                    },
+
+                    {
+                        workid: 0,
+                        title: "Proin gravida nibh vel velit",
+                        slug: "work7",
+                        image: "media/work7.jpg",
+                    },
+
+                    {
+                        workid: 0,
+                        title: "Proin gravida nibh vel velit",
+                        slug: "work8",
+                        image: "media/work8.jpg",
+                    }
+                ];
+            </script>
+
+
+            <nav class="work-nav">
+                <button class="work-btn active" href=" ">viss</button>
+                <script>
+                    var categories = [
+                        "Identitāte",
+                        "Web dizains",
+                        "Aplikāciju dizains",
+                        "Fotogrāfija"
+                    ];
+
+
+                    for (var i = 0; i < categories.length; i++) {
+                        document.write("<button class='work-btn' data-workid='" + i + "'>" + categories[i] + "</button>");
+                    }
+                </script>
+            </nav>
+            <div class="slider-horizontal">
+                <button class="slider-button active"></button>
+                <button class="slider-button"></button>
+                <button class="slider-button"></button>
+            </div>
         </div>
-        <nav class="work-nav">
-            <a class="work-btn active" href=" ">viss</a>
-            <a class="work-btn" href=" ">identitāte</a>
-            <a class="work-btn" href=" ">web dizains</a>
-            <a class="work-btn" href=" ">aplikāciju dizains</a>
-            <a class="work-btn" href=" ">fotogrāfija</a>
-        </nav>
-        <div class="slider-horizontal">
-            <button class="slider-button active"></button>
-            <button class="slider-button"></button>
-            <button class="slider-button"></button>
-        </div>
-      </div>
     </div>
     <div class="work-gallery cf">
+        <script>
+            for (var i = 0; i < items.length; i++) {
+                var href = "work-" + items[i].workid + "/" + items[i].slug;
+                document.write(
+                    '<a href="' + href + '" class="our-work-block">\
+        <div class="our-work-image">\
+            <img src="' + items[i].image +
+                    '">\
+            <div class="work-overlay">\
+                <div class="work-comments">\
+                        <i class="fa fa-bullseye fa-5x" aria-hidden="true"></i>\
+                        <div class="work-heading">' +
+                    items[i].title + '</div>\
+                        ' + categories[items[i].workid] + '\
+                </div>\
+            </div>\
+        </div>\
+    </a>')
+            }
+        </script>
+        <!--
         <a href="" class="our-work-block">
             <div class="our-work-image">
                 <img src="media/work1.jpg" alt="work1">
@@ -186,8 +286,8 @@
                     </div>
                 </div>
             </div>
-        </a>
-        <a href="" class="our-work-block">
+        </a> -->
+        <!-- <a href="" class="our-work-block">
             <div class="our-work-image">
                 <img src="media/work6.jpg" alt="work6">
                 <div class="work-overlay">
@@ -222,84 +322,84 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </a>
+        </a> -->
+    </div>
     <!-- ========================OUR WORK SECTION END======================================== -->
 
     <!-- ========================PRICELIST TABLE SECTION======================================== -->
     <div class="pricelist-container">
         <div class="pricelist cf">
-          <div class="main-site-width">
-            <div class="section-title">cenrādis</div>
-            <nav class="price-nav">
-                <a class="price-btn active" href=" ">identitāte</a>
-                <a class="price-btn" href=" ">web dizains</a>
-                <a class="price-btn" href=" ">aplikāciju dizains</a>
-                <a class="price-btn" href=" ">fotogrāfija</a>
-            </nav>
-          </div>
+            <div class="main-site-width">
+                <div class="section-title">cenrādis</div>
+                <nav class="price-nav">
+                    <a class="price-btn active" href=" ">identitāte</a>
+                    <a class="price-btn" href=" ">web dizains</a>
+                    <a class="price-btn" href=" ">aplikāciju dizains</a>
+                    <a class="price-btn" href=" ">fotogrāfija</a>
+                </nav>
+            </div>
         </div>
         <div class="table-pricelist cf">
-          <div class="main-site-width">
-            <table class="prices">
-                <thead>
-                    <tr>
-                        <th>start</th>
-                        <th>basic</th>
-                        <th class="highlighted">pro</th>
-                        <th>super</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>5 users</td>
-                        <td>10 users</td>
-                        <td class="highlighted">100 users</td>
-                        <td>Unlimited users</td>
-                    </tr>
-                    <tr>
-                        <td>10 projects</td>
-                        <td>50 projects</td>
-                        <td class="highlighted">Unlimited projects</td>
-                        <td>Unlimited projects</td>
-                    </tr>
-                    <tr>
-                        <td>10GB amount of space</td>
-                        <td>50GB amount of space</td>
-                        <td class="highlighted">1TB amount of space</td>
-                        <td>Unlimited amount of space</td>
-                    </tr>
-                    <tr>
-                        <td>5 e-mail accounts</td>
-                        <td>10 e-mail accounts</td>
-                        <td class="highlighted">100 e-mail accounts</td>
-                        <td>Unlimited e-mail accounts</td>
-                    </tr>
-                    <tr class="monthly-prices">
-                        <td>19 &euro;</td>
-                        <td>29 &euro;</td>
-                        <td class="highlighted">49 &euro;</td>
-                        <td>99 &euro;</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>
-                            <button class="sign-up" type="button">sign up</button>
-                        </td>
-                        <td>
-                            <button class="sign-up" type="button">sign up</button>
-                        </td>
-                        <td class="highlighted">
-                            <button class="sign-up activated" type="button">sign up</button>
-                        </td>
-                        <td>
-                            <button class="sign-up" type="button">sign up</button>
-                        </td>
-                    </tr>
-                </tfoot>
-            </table>
-          </div>
+            <div class="main-site-width">
+                <table class="prices">
+                    <thead>
+                        <tr>
+                            <th>start</th>
+                            <th>basic</th>
+                            <th class="highlighted">pro</th>
+                            <th>super</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>5 users</td>
+                            <td>10 users</td>
+                            <td class="highlighted">100 users</td>
+                            <td>Unlimited users</td>
+                        </tr>
+                        <tr>
+                            <td>10 projects</td>
+                            <td>50 projects</td>
+                            <td class="highlighted">Unlimited projects</td>
+                            <td>Unlimited projects</td>
+                        </tr>
+                        <tr>
+                            <td>10GB amount of space</td>
+                            <td>50GB amount of space</td>
+                            <td class="highlighted">1TB amount of space</td>
+                            <td>Unlimited amount of space</td>
+                        </tr>
+                        <tr>
+                            <td>5 e-mail accounts</td>
+                            <td>10 e-mail accounts</td>
+                            <td class="highlighted">100 e-mail accounts</td>
+                            <td>Unlimited e-mail accounts</td>
+                        </tr>
+                        <tr class="monthly-prices">
+                            <td>19 &euro;</td>
+                            <td>29 &euro;</td>
+                            <td class="highlighted">49 &euro;</td>
+                            <td>99 &euro;</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>
+                                <button class="sign-up" type="button">sign up</button>
+                            </td>
+                            <td>
+                                <button class="sign-up" type="button">sign up</button>
+                            </td>
+                            <td class="highlighted">
+                                <button class="sign-up activated" type="button">sign up</button>
+                            </td>
+                            <td>
+                                <button class="sign-up" type="button">sign up</button>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
         </div>
     </div>
     <!-- ========================PRICELIST SECTION END======================================== -->
@@ -307,173 +407,345 @@
     <!-- ========================TEAM SECTION======================================== -->
     <div id="team">
         <div class="team-container cf">
-          <div class="main-site-width">
-            <div class="section-title">mūsu komanda</div>
-            <div class="team-description">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
-                Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna
-                eu felis dapibus condimentum sit amet a augue</div>
-            <div class="slider-horizontal">
-                <button class="slider-button active"></button>
-                <button class="slider-button"></button>
-                <button class="slider-button"></button>
+            <div class="main-site-width">
+                <div class="section-title">mūsu komanda</div>
+                <div class="team-description">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
+                    velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam
+                    ac urna eu felis dapibus condimentum sit amet a augue</div>
+                <div class="team-block-container cf">
+                  <div class="slider-horizontal" id="team-slider">
+                      <button class="slider-button active"></button>
+                      <button class="slider-button"></button>
+                      <button class="slider-button"></button>
+                  </div>
+                  <div class="team-items">
+                  <div class="team-slider-item">
+                    <div class="one-team-block">
+                        <div class="team-image">
+                            <img src="media/team1.jpg" alt="team1">
+                            <div class="team-overlay">
+                                <div class="team-comments">
+                                    <div class="team-heading">
+                                        Proin gravida nibh vel velit auctor aliquet
+                                    </div>
+                                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+                                </div>
+                                <div class="team-social-blocks">
+                                    <a href="#" class="team-social"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-member">Jānis Pirmais</div>
+                            <div class="team-position">Izpilddirektors</div>
+                        </div>
+                    </div>
+                    <div class="one-team-block">
+                        <div class="team-image">
+                            <img src="media/team2.jpg" alt="team2">
+                            <div class="team-overlay">
+                                <div class="team-comments">
+                                    <div class="team-heading">
+                                        Proin gravida nibh vel velit auctor aliquet
+                                    </div>
+                                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+                                </div>
+                                <div class="team-social-blocks">
+                                    <a href="#" class="team-social"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-member">Annija Otrā</div>
+                            <div class="team-position">Grafiskā dizainere</div>
+                        </div>
+                    </div>
+                    <div class="one-team-block">
+                        <div class="team-image">
+                            <img src="media/team3.jpg" alt="team3">
+                            <div class="team-overlay">
+                                <div class="team-comments">
+                                    <div class="team-heading">
+                                        Proin gravida nibh vel velit auctor aliquet
+                                    </div>
+                                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+                                </div>
+                                <div class="team-social-blocks">
+                                    <a href="#" class="team-social"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">Kristaps Trešais</div>
+                        <div class="team-position">Front-end izstrādātājs</div>
+                    </div>
+                    <div class="one-team-block">
+                        <div class="team-image">
+                            <img src="media/team4.jpg" alt="team4">
+                            <div class="team-overlay">
+                                <div class="team-comments">
+                                    <div class="team-heading">
+                                        Proin gravida nibh vel velit auctor aliquet
+                                    </div>
+                                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+                                </div>
+                                <div class="team-social-blocks">
+                                    <a href="#" class="team-social"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">Ketija Ceturtā</div>
+                        <div class="team-position">UI/UX dizainere</div>
+                    </div>
+                  </div>
+                  <div class="team-slider-item">
+                    <div class="one-team-block">
+                        <div class="team-image">
+                            <img src="media/team5.jpg" alt="team1">
+                            <div class="team-overlay">
+                                <div class="team-comments">
+                                    <div class="team-heading">
+                                        Proin gravida nibh vel velit auctor aliquet
+                                    </div>
+                                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+                                </div>
+                                <div class="team-social-blocks">
+                                    <a href="#" class="team-social"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-member">Izidors Piektais</div>
+                            <div class="team-position">Direktora asistents</div>
+                        </div>
+                    </div>
+                    <div class="one-team-block">
+                        <div class="team-image">
+                            <img src="media/team6.jpg" alt="team2">
+                            <div class="team-overlay">
+                                <div class="team-comments">
+                                    <div class="team-heading">
+                                        Proin gravida nibh vel velit auctor aliquet
+                                    </div>
+                                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+                                </div>
+                                <div class="team-social-blocks">
+                                    <a href="#" class="team-social"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-member">Judīte Sestā</div>
+                            <div class="team-position">Krāsainā dizainere</div>
+                        </div>
+                    </div>
+                    <div class="one-team-block">
+                        <div class="team-image">
+                            <img src="media/team7.jpg" alt="team3">
+                            <div class="team-overlay">
+                                <div class="team-comments">
+                                    <div class="team-heading">
+                                        Proin gravida nibh vel velit auctor aliquet
+                                    </div>
+                                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+                                </div>
+                                <div class="team-social-blocks">
+                                    <a href="#" class="team-social"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">Kaspars Septītais</div>
+                        <div class="team-position">Back-end izstrādātājs</div>
+                    </div>
+                    <div class="one-team-block">
+                        <div class="team-image">
+                            <img src="media/team8.jpg" alt="team4">
+                            <div class="team-overlay">
+                                <div class="team-comments">
+                                    <div class="team-heading">
+                                        Proin gravida nibh vel velit auctor aliquet
+                                    </div>
+                                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+                                </div>
+                                <div class="team-social-blocks">
+                                    <a href="#" class="team-social"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">Līga Astotā</div>
+                        <div class="team-position">Direktora sieva</div>
+                    </div>
+                  </div>
+                  <div class="team-slider-item">
+                    <div class="one-team-block">
+                        <div class="team-image">
+                            <img src="media/team9.jpg" alt="team1">
+                            <div class="team-overlay">
+                                <div class="team-comments">
+                                    <div class="team-heading">
+                                        Proin gravida nibh vel velit auctor aliquet
+                                    </div>
+                                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+                                </div>
+                                <div class="team-social-blocks">
+                                    <a href="#" class="team-social"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-member">Juris Devītais</div>
+                            <div class="team-position">Galvenais kopētājs</div>
+                        </div>
+                    </div>
+                    <div class="one-team-block">
+                        <div class="team-image">
+                            <img src="media/team10.jpg" alt="team2">
+                            <div class="team-overlay">
+                                <div class="team-comments">
+                                    <div class="team-heading">
+                                        Proin gravida nibh vel velit auctor aliquet
+                                    </div>
+                                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+                                </div>
+                                <div class="team-social-blocks">
+                                    <a href="#" class="team-social"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-member">Anda Desmitā</div>
+                            <div class="team-position">Lietvede</div>
+                        </div>
+                    </div>
+                    <div class="one-team-block">
+                        <div class="team-image">
+                            <img src="media/team11.jpg" alt="team3">
+                            <div class="team-overlay">
+                                <div class="team-comments">
+                                    <div class="team-heading">
+                                        Proin gravida nibh vel velit auctor aliquet
+                                    </div>
+                                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+                                </div>
+                                <div class="team-social-blocks">
+                                    <a href="#" class="team-social"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">Luijs Vienpadsmitais</div>
+                        <div class="team-position">Sētnieks</div>
+                    </div>
+                    <div class="one-team-block">
+                        <div class="team-image">
+                            <img src="media/team12.jpg" alt="team4">
+                            <div class="team-overlay">
+                                <div class="team-comments">
+                                    <div class="team-heading">
+                                        Proin gravida nibh vel velit auctor aliquet
+                                    </div>
+                                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+                                </div>
+                                <div class="team-social-blocks">
+                                    <a href="#" class="team-social"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="team-social"><i class="fa fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">Lidija Divpadsmitā</div>
+                        <div class="team-position">Apkopēja</div>
+                    </div>
+                  </div>
+                </div>
+                </div>
             </div>
-            <div class="team-block-container cf">
-                <div class="one-team-block">
-                    <div class="team-image">
-                        <img src="media/team1.jpg" alt="team1">
-                        <div class="team-overlay">
-                            <div class="team-comments">
-                                <div class="team-heading">
-                                    Proin gravida nibh vel velit auctor aliquet
-                                </div>
-                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
-                            </div>
-                            <div class="team-social-blocks">
-                                <a href="#" class="team-social"><i class="fa fa-twitter"></i></a>
-                                <a href="#" class="team-social"><i class="fa fa-facebook"></i></a>
-                                <a href="#" class="team-social"><i class="fa fa-dribbble"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-member">Jānis Pirmais</div>
-                        <div class="team-position">Izpilddirektors</div>
-                    </div>
-                </div>
-                <div class="one-team-block">
-                    <div class="team-image">
-                        <img src="media/team2.jpg" alt="team2">
-                        <div class="team-overlay">
-                            <div class="team-comments">
-                                <div class="team-heading">
-                                    Proin gravida nibh vel velit auctor aliquet
-                                </div>
-                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
-                            </div>
-                            <div class="team-social-blocks">
-                                <a href="#" class="team-social"><i class="fa fa-twitter"></i></a>
-                                <a href="#" class="team-social"><i class="fa fa-facebook"></i></a>
-                                <a href="#" class="team-social"><i class="fa fa-dribbble"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-member">Annija Otrā</div>
-                        <div class="team-position">Grafiskā dizainere</div>
-                    </div>
-                </div>
-                <div class="one-team-block">
-                    <div class="team-image">
-                        <img src="media/team3.jpg" alt="team3">
-                        <div class="team-overlay">
-                            <div class="team-comments">
-                                <div class="team-heading">
-                                    Proin gravida nibh vel velit auctor aliquet
-                                </div>
-                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
-                            </div>
-                            <div class="team-social-blocks">
-                                <a href="#" class="team-social"><i class="fa fa-twitter"></i></a>
-                                <a href="#" class="team-social"><i class="fa fa-facebook"></i></a>
-                                <a href="#" class="team-social"><i class="fa fa-dribbble"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-member">Kristaps Trešais</div>
-                    <div class="team-position">Front-end izstrādātājs</div>
-                </div>
-                <div class="one-team-block">
-                    <div class="team-image">
-                        <img src="media/team4.jpg" alt="team4">
-                        <div class="team-overlay">
-                            <div class="team-comments">
-                                <div class="team-heading">
-                                    Proin gravida nibh vel velit auctor aliquet
-                                </div>
-                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
-                            </div>
-                            <div class="team-social-blocks">
-                                <a href="#" class="team-social"><i class="fa fa-twitter"></i></a>
-                                <a href="#" class="team-social"><i class="fa fa-facebook"></i></a>
-                                <a href="#" class="team-social"><i class="fa fa-dribbble"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-member">Ketija Ceturtā</div>
-                    <div class="team-position">UI/UX dizainere</div>
-                </div>
-            </div>
-          </div>
         </div>
-      </div>
-        <!-- ========================TEAM SECTION END======================================== -->
+    </div>
+    <!-- ========================TEAM SECTION END======================================== -->
 
-        <!-- ========================CONTACT FORM SECTION======================================== -->
-        <div id="contact" class="container-contact cf">
-          <div class="main-site-width">
+    <!-- ========================CONTACT FORM SECTION======================================== -->
+    <div id="contact" class="container-contact cf">
+        <div class="main-site-width">
             <div class="section-title">sazināties</div>
             <div class="contact-form">
-                <form id="contact-form" action="demo_form.asp" method="get">
+                <form id="contactForm" action="demo_form.asp" method="get">
                     <div class="form-row">
-                        <input type="text" name="fname" placeholder="Vārds Uzvārds">
+                        <input type="text" id="name" class="form-field" name="fname" placeholder="Vārds Uzvārds"  onsubmit="removeError()">
                     </div>
                     <div class="form-row">
-                        <input type="text" name="email" placeholder="E-pasts">
+                        <input type="text" id="email" class="form-field" name="e-mail" placeholder="E-pasts">
                     </div>
                     <div class="form-row">
-                        <textarea type="textarea" name="question" placeholder="Tavs jautājums"></textarea>
+                        <textarea type="textarea" id="question" class="form-field" name="textarea" placeholder="Tavs jautājums"></textarea>
                     </div>
                     <div class="form-button">
                         <button class="submit" type="submit">sūtīt ziņu</button>
                     </div>
                 </form>
+                <div class="errorContainer" id="errorContainer"></div>
                 <div class="address">
                     Rīga, Visskaistākā iela 1 // mob: (+371) 26 27 96 07 // hello@moodcreations.eu
                 </div>
             </div>
-          </div>
         </div>
-        <!-- ========================CONTACT FORM SECTION END======================================== -->
+    </div>
+    <!-- ========================CONTACT FORM SECTION END======================================== -->
 
-        <!-- ========================MAP SECTION======================================== -->
-        <div class="map-container">
-            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-            <div id='gmap_canvas' style='height:600px;width:100%;'></div>
-            <style>
-                #gmap_canvas img {
-                    max-width: none!important;
-                    background: none!important
-                }
-            </style>
-        </div>
-        <script type='text/javascript'>
-            function init_map() {
-                var myOptions = {
-                    scrollwheel: false,
-                    zoom: 15,
-                    center: new google.maps.LatLng(56.9416185, 24.093912600000067),
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                };
-                map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-                marker = new google.maps.Marker({
-                    map: map,
-                    position: new google.maps.LatLng(56.9416185, 24.093912600000067)
-                });
-                infowindow = new google.maps.InfoWindow({
-                    content: none
-                });
-                google.maps.event.addListener(marker, 'click', function() {
-                    infowindow.open(map, marker);
-                });
-                infowindow.open(map, marker);
+    <!-- ========================MAP SECTION======================================== -->
+    <div class="map-container">
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+        <div id='gmap_canvas' style='height:600px;width:100%;'></div>
+        <style>
+            #gmap_canvas img {
+                max-width: none!important;
+                background: none!important
             }
-            google.maps.event.addDomListener(window, 'load', init_map);
-        </script>
-        <!-- ========================MAP SECTION END======================================== -->
+        </style>
+    </div>
+    <script type='text/javascript'>
+        function init_map() {
+            var myOptions = {
+                scrollwheel: false,
+                zoom: 15,
+                center: new google.maps.LatLng(56.9416185, 24.093912600000067),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+            marker = new google.maps.Marker({
+                map: map,
+                position: new google.maps.LatLng(56.9416185, 24.093912600000067)
+            });
+            infowindow = new google.maps.InfoWindow({
+                // content: none
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map, marker);
+            });
+            infowindow.open(map, marker);
+        }
+        google.maps.event.addDomListener(window, 'load', init_map);
+    </script>
+    <!-- ========================MAP SECTION END======================================== -->
 
-        <!-- ========================PAGE FOOTER======================================== -->
-        <div class="copyright cf">
-          <div class="main-site-width">
+    <!-- ========================PAGE FOOTER======================================== -->
+    <div class="copyright cf">
+        <div class="main-site-width">
             &copy; Copyright tekstam ir jābūt šeit, 2016
-          </div>
         </div>
-        <!-- ========================PAGE FOOTER END======================================== -->
+    </div>
+    <!-- ========================PAGE FOOTER END======================================== -->
+    <script src="js/smoothScroll.js"></script>
+    <script src="js/formValidation.js"></script>
+    <script src="js/main-slider.js"></script>
 </body>
 
 </html>
