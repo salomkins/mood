@@ -1,31 +1,24 @@
-// lib
-function $(selector) {
-  return document.querySelector(selector);
-}
+(function(){
+pageSlider('#work-slider', 'horizontal');
 
-var $$ = function(selector) {
-  return [].slice.call(document.querySelectorAll(selector));
-}
-
-pageSlider('#main-slider');
-
-function pageSlider(selector) {
+function pageSlider(selector, direction = 'vertical') {
   // get data
   var slider = $(selector);
-
+  slider.classList.add('slider-direction-' + direction)
   if (!slider) {
     return false;
   }
 
-  var oLoop = false;
 
   var slides = slider.querySelectorAll('.slider-item');
   slides = [].slice.call(slides); // to create array from slides list
 
+
   //generate pages
-  var paginator = slider.querySelector('.slider-vertical');
+  var paginator = slider.querySelector('.slider');
+  // var paginatorDirection = slider.querySelector('.vertical');
   var pages = [];
-  console.log(pages);
+  // console.log(paginatorDirection);
   for (var i in slides) {
     var page = document.createElement('button');
     page.setAttribute('type', 'button');
@@ -54,7 +47,11 @@ function pageSlider(selector) {
       setActivePage(index);
       slides.forEach(function(slide) {
         var slideValue = -100 * activePage;
-        slide.style.transform = 'translateY(' + slideValue + '%)';
+        if (direction == 'vertical') {
+          slide.style.transform = 'translateY(' + slideValue + '%)';
+        } else {
+          slide.style.transform = 'translateX(' + slideValue + '%)';
+        }
       })
     }
   }
@@ -83,4 +80,6 @@ function pageSlider(selector) {
     }.bind(null, i)
   }
   slideTo(0);
+
 }
+})()

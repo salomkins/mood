@@ -6,26 +6,17 @@ var contactForm =  $('#contactForm');
 contactForm.onsubmit = function() {
   var formData = new FormData(this);
   var name = formData.get('fname');
-  var email = formData.get('email');
+  var email = formData.get('e-mail');
   var msg = formData.get('textarea');
   var errorMessage = [];
 
-  // validate e-mail
-  function validateEmail(inputText) {
-    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+console.log(errorMessage);
 
-    if(inputText.value.match(mailformat)) {
-      document.contactForm.email.focus();
-      return true;
+
+  // remove error messages if filled
+    function removeError() {
+    addBorder1.classList.remove("error");
   }
-      else {
-      errorMessage.push("Lūdzu ievadiet derīgu e-pasta adresi");
-      document.contactForm.email.focus();
-      return false;
-}
-}
-
-
 
 
   // check if name is not empty
@@ -33,16 +24,15 @@ contactForm.onsubmit = function() {
      errorMessage.push('Lūdzu norādiet vārdu')
   }
 
-  // check if email is not empty
-  if (email == "" || validateEmail(document.contactForm.email)) {
+  // check if name is not empty
+  if (email == "" || email == null) {
      errorMessage.push('Lūdzu norādiet e-pastu')
   }
 
-    // check if question is not empty
+    // check if name is not empty
   if (msg == "" || msg == null) {
      errorMessage.push('Ievadiet interesējošo jautājumu')
   }
-
 
   // check for errors and submit form if no errors
   if (errorMessage.length) {
@@ -57,26 +47,23 @@ contactForm.onsubmit = function() {
     // for each message add li
     for (var i = 0; i < errorMessage.length; i++) {
       var message = document.createElement('p');
-//       if (name == "" || name == null) {
-//           var addBorder1 = document.querySelector('#name');
-//           addBorder1.classList.add("error");
-//     }
-//
-//
-//     if (email == "" || email == null) {
-//         var addBorder2 = document.querySelector("#email");
-//         addBorder2.classList.add("error");
-//   } else {
-//     $('#email').removeClass('error');
-//
-//   }
-//
-//
-//
-//   if (msg == "" || msg == null) {
-//       var addBorder3 = document.querySelector("#question");
-//       addBorder3.classList.add("error");
-// }
+      if (name == "" || name == null) {
+          var addBorder1 = document.querySelector('#name');
+          addBorder1.classList.add("error");
+    }
+
+console.log(name);
+
+    if (email == "" || email == null) {
+        var addBorder2 = document.querySelector("#email");
+        addBorder2.classList.add("error");
+  }
+
+
+  if (msg == "" || msg == null) {
+      var addBorder3 = document.querySelector("#question");
+      addBorder3.classList.add("error");
+}
 
       message.classList.add('errorMsg');
       message.innerHTML = errorMessage[i];

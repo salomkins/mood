@@ -109,7 +109,7 @@ a, a:link, a:visited {
   max-width: 100%;
 }
 
-.slider-vertical {
+.slider.vertical {
     padding-top: 40px;
     padding-bottom: 30px;
     width: 0;
@@ -119,16 +119,16 @@ a, a:link, a:visited {
     transform: translateY(-50%);
 }
 
-.slider-vertical button:hover, button.active, .slider-vertical button.active {
+.slider.vertical button:hover, button.active, .slider.vertical button.active {
     background-color: rgb(255, 255, 255);
 }
 
-.slider-items{
+.slider-direction-vertical .slider-items{
   max-height: 600px;
   overflow: hidden;
 }
 
-.slider-item {
+.slider-item.t-main-item {
   white-space: normal;
   height: 100%;
   vertical-align: top;
@@ -212,7 +212,6 @@ img .one-offer-block{
 }
 
 .description-work {
-    width: 1140px;
     margin: auto;
     padding-left: 70px;
     padding-right: 70px;
@@ -305,14 +304,19 @@ button.slider-button{
     margin: 10px;
     padding: 0;
     background-color: transparent;
+    cursor: pointer;
 }
 
-.slider-horizontal {
+.slider-items.t-work{
+  width: 100%;
+}
+
+.slider.horizontal {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.slider-horizontal button:hover, button.active, .slider-horizontal button.active {
+.slider.horizontal button:hover, button.active, .slider.horizontal button.active {
     background-color: rgb(255, 255, 255);
 }
 /*<!-- ========================OUR WORK SECTION END======================================== -->*/
@@ -428,15 +432,15 @@ button.sign-up:hover, button.activated, .sign-up button.activated{
     padding-right: 80px;
 }
 
-.team-items{
-  max-height: 365px;
+.slider-direction-horizontal .slider-items{
+  width: 100%;
   overflow: hidden;
-  /*white-space: nowrap;*/
+  white-space: nowrap;
 }
 
-.team-slider-item {
+.slider-item.t-team-item {
   white-space: normal;
-  /*display: inline-block;*/
+  display: inline-block;
   width: 100%;
   vertical-align: top;
   transition: transform .5s ease-in-out;
@@ -596,8 +600,19 @@ textarea[type="textarea"] {
   border-radius: 4px;
 }
 
-.errorContainer{
+
+.errors p{
+  margin-bottom: 10px;
+  width: 60%;
+  margin: 0;
+  line-height: 1;
+  border: 0;
+  background: red;
+  padding: .3em .5em;
   display: inline-block;
+  min-width: 40%;
+  position: relative;
+  font-size: 14px;
 }
 
 .address {
