@@ -1,8 +1,6 @@
-(function(){
-pageSlider('#main-slider');
-pageSlider('#team-slider', 'horizontal');
+function slider(){
 
-function pageSlider(selector, direction = 'vertical') {
+this.pageSlider = function(selector, direction = 'vertical') {
   // get data
   var slider = $(selector);
   slider.classList.add('slider-direction-' + direction)
@@ -18,6 +16,7 @@ function pageSlider(selector, direction = 'vertical') {
   //generate pages
   var paginator = slider.querySelector('.slider');
   // var paginatorDirection = slider.querySelector('.vertical');
+  paginator.innerHTML = "";
   var pages = [];
   // console.log(paginatorDirection);
   for (var i in slides) {
@@ -31,7 +30,6 @@ function pageSlider(selector, direction = 'vertical') {
 
   // create slide functions
   var activePage = 0;
-
 
   var setActivePage = function(index) {
     if (index >= 0 && index < pages.length) {
@@ -83,4 +81,13 @@ function pageSlider(selector, direction = 'vertical') {
   slideTo(0);
 
 }
-})()
+}
+
+
+
+(function(){
+  var sl = new slider();
+
+sl.pageSlider('#main-slider');
+  sl.pageSlider('#team-slider', 'horizontal');
+})();

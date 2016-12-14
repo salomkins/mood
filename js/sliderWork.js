@@ -1,7 +1,7 @@
-(function(){
+function sliderWork(){
 pageSlider('#work-slider', 'horizontal');
 
-function pageSlider(selector, direction = 'vertical') {
+this.pageSlider = function(selector, direction = 'vertical') {
   // get data
   var slider = $(selector);
   slider.classList.add('slider-direction-' + direction)
@@ -9,16 +9,14 @@ function pageSlider(selector, direction = 'vertical') {
     return false;
   }
 
-
   var slides = slider.querySelectorAll('.slider-item');
   slides = [].slice.call(slides); // to create array from slides list
-
 
   //generate pages
   var paginator = slider.querySelector('.slider');
   // var paginatorDirection = slider.querySelector('.vertical');
   var pages = [];
-  // console.log(paginatorDirection);
+
   for (var i in slides) {
     var page = document.createElement('button');
     page.setAttribute('type', 'button');
@@ -82,4 +80,6 @@ function pageSlider(selector, direction = 'vertical') {
   slideTo(0);
 
 }
-})()
+}
+
+sliderWork();

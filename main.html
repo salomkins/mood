@@ -107,207 +107,7 @@
             <div class="description-work main-site-width cf">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
                 Nam nec tellus a odio tincidunt auctor a ornare odio.
             </div>
-
-            <script>
-                var categories = [
-                    "Identitāte",
-                    "Web dizains",
-                    "Aplikāciju dizains",
-                    "Fotogrāfija"
-                ];
-
-
-                // for (var i = 0; i < categories.length; i++) {
-                //   document.write("<button data-workid='" + i + "'>" + categories[i] + "</button>");
-                // }
-
-
-                var items = [{
-                        workid: 0,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work1",
-                        image: "media/work1.jpg",
-                    },
-
-                    {
-                        workid: 2,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work2",
-                        image: "media/work2.jpg",
-                    },
-
-                    {
-                        workid: 1,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work3",
-                        image: "media/work3.jpg",
-                    },
-
-                    {
-                        workid: 3,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work4",
-                        image: "media/work4.jpg",
-                    },
-
-                    {
-                        workid: 1,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work5",
-                        image: "media/work5.jpg",
-                    },
-
-                    {
-                        workid: 2,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work6",
-                        image: "media/work6.jpg",
-                    },
-
-                    {
-                        workid: 0,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work7",
-                        image: "media/work7.jpg",
-                    },
-
-                    {
-                        workid: 0,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work8",
-                        image: "media/work8.jpg",
-                    },
-
-                    {
-                        workid: 3,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work9",
-                        image: "media/work9.jpg",
-                    },
-
-                    {
-                        workid: 2,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work10",
-                        image: "media/work10.jpg",
-                    },
-
-                    {
-                        workid: 0,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work11",
-                        image: "media/work11.jpg",
-                    },
-
-                    {
-                        workid: 1,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work12",
-                        image: "media/work12.jpg",
-                    },
-
-                    {
-                        workid: 3,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work13",
-                        image: "media/work13.jpg",
-                    },
-
-                    {
-                        workid: 1,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work14",
-                        image: "media/work14.jpg",
-                    },
-
-                    {
-                        workid: 2,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work15",
-                        image: "media/work15.jpg",
-                    },
-
-                    {
-                        workid: 3,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work16",
-                        image: "media/work16.jpg",
-                    },
-
-                    {
-                        workid: 0,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work17",
-                        image: "media/work8.jpg",
-                    },
-
-                    {
-                        workid: 2,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work18",
-                        image: "media/work7.jpg",
-                    },
-
-                    {
-                        workid: 0,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work19",
-                        image: "media/work6.jpg",
-                    },
-
-                    {
-                        workid: 1,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work20",
-                        image: "media/work5.jpg",
-                    },
-
-                    {
-                        workid: 3,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work21",
-                        image: "media/work4.jpg",
-                    },
-
-                    {
-                        workid: 1,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work22",
-                        image: "media/work3.jpg",
-                    },
-
-                    {
-                        workid: 2,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work23",
-                        image: "media/work2.jpg",
-                    },
-
-                    {
-                        workid: 3,
-                        title: "Proin gravida nibh vel velit",
-                        slug: "work24",
-                        image: "media/work1.jpg",
-                    }
-                ];
-            </script>
-
-
-            <nav class="work-nav">
-                <button class="work-btn active" href=" ">viss</button>
-                <script>
-                    var categories = [
-                        "Identitāte",
-                        "Web dizains",
-                        "Aplikāciju dizains",
-                        "Fotogrāfija"
-                    ];
-
-
-                    for (var i = 0; i < categories.length; i++) {
-                        document.write("<button class='work-btn' data-workid='" + i + "'>" + categories[i] + "</button>");
-                    }
-                </script>
+            <nav class="work-nav" id="workNav">
             </nav>
             <div class="slider-work" id="work-slider">
             <div class="slider horizontal">
@@ -317,34 +117,7 @@
             </div>
 <div class="work-gallery cf">
 <div class="slider-items t-work">
-<div class="slider-item t-work-item">
 
-      <script>
-          for (var i = 0; i < items.length; i++) {
-              var href = "work-" + items[i].workid + "/" + items[i].slug;
-              document.write(
-                  '<a href="' + href + '" class="our-work-block">\
-      <div class="our-work-image">\
-          <img src="' + items[i].image +
-                  '">\
-          <div class="work-overlay">\
-              <div class="work-comments">\
-                      <i class="fa fa-bullseye fa-5x" aria-hidden="true"></i>\
-                      <div class="work-heading">' +
-                  items[i].title + '</div>\
-                      ' + categories[items[i].workid] + '\
-              </div>\
-          </div>\
-      </div>\
-  </a>')
-          }
-      </script>
-      </div>
-</div>
-<div class="slider-item t-work-item">
-</div>
-<div class="slider-item t-work-item">
-</div>
 
 </div>
     </div>
@@ -804,7 +577,7 @@
         <div class="main-site-width">
             <div class="section-title">sazināties</div>
             <div class="contact-form">
-                <form id="contactForm" name="contactForm" action="demo_form.asp" method="get">
+                <form id="contactForm" name="contactForm" action="demo_form.asp" method="post">
                 <div class="errorContainer" id="errorContainer"></div>
                     <div class="form-row">
                         <input type="text" id="name" class="form-field" name="fname" placeholder="Vārds Uzvārds">
@@ -875,7 +648,8 @@
     <script src="js/smoothScroll.js"></script>
     <script src="js/formValidation.js"></script>
     <script src="js/slider.js"></script>
-    <script src="js/sliderWork.js"></script>
+    <!-- <script src="js/sliderWork.js"></script> -->
+    <script src="js/workGallery.js"></script>
 </body>
 
 </html>

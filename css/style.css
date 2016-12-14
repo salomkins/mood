@@ -256,6 +256,7 @@ img .one-offer-block{
     margin: 25px;
     text-transform: uppercase;
     border: 1px solid transparent;
+    outline: none;
     background-color: transparent;
     color: #fff;
 }
@@ -305,10 +306,7 @@ button.slider-button{
     padding: 0;
     background-color: transparent;
     cursor: pointer;
-}
-
-.slider-items.t-work{
-  width: 100%;
+    outline: none;
 }
 
 .slider.horizontal {
@@ -432,13 +430,13 @@ button.sign-up:hover, button.activated, .sign-up button.activated{
     padding-right: 80px;
 }
 
-.slider-direction-horizontal .slider-items{
+.slider-direction-horizontal .slider-items {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.slider-item.t-team-item {
+.slider-item.t-team-item, .slider-item.t-work-item {
   white-space: normal;
   display: inline-block;
   width: 100%;
