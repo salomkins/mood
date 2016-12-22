@@ -1,11 +1,4 @@
-function $(selector) {
-    return document.querySelector(selector);
-}
-
-var $$ = function(selector) {
-    return [].slice.call(document.querySelectorAll(selector));
-}
-
+(function() {
 var navigations = $$('.main-nav a, .logo-info a');
 
 for (var index in navigations) {
@@ -46,3 +39,4 @@ function scroll(distance, step = 0) {
         }
     }, 10)
 }
+})()

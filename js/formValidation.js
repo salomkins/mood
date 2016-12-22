@@ -5,6 +5,7 @@
     // validate form
     contactForm.onsubmit = function(e) {
         // get error container
+        // e.preventDefault();
         var errorContainer = $('#errorContainer');
         errorContainer.innerHTML = '';
 
@@ -30,18 +31,24 @@
         }
 
         // check if name is not empty
-        if (name == "" || name == null) {
-            errorMessage.push('Lūdzu norādiet vārdu')
+
+        if (!name) {
+            errorMessage.push('Lūdzu norādiet vārdu');
         }
 
         // check if email is not empty
-        if (email == "" || !isEmailValid(email)) {
-            errorMessage.push('Lūdzu norādiet e-pastu')
+        if (!email) {
+            errorMessage.push('Lūdzu norādiet e-pastu');
+
+        } else {
+          isEmailValid(email);
         }
 
+
+
         // check if question is not empty
-        if (msg == "" || msg == null) {
-            errorMessage.push('Ievadiet interesējošo jautājumu')
+        if (!msg) {
+            errorMessage.push('Ievadiet interesējošo jautājumu');
         }
 
         // check for errors and submit form if no errors
@@ -56,26 +63,6 @@
                 // for each message add li
             for (var i = 0; i < errorMessage.length; i++) {
                 var message = document.createElement('p');
-                //       if (name == "" || name == null) {
-                //           var addBorder1 = document.querySelector('#name');
-                //           addBorder1.classList.add("error");
-                //     }
-                //
-                //
-                //     if (email == "" || email == null) {
-                //         var addBorder2 = document.querySelector("#email");
-                //         addBorder2.classList.add("error");
-                //   } else {
-                //     $('#email').removeClass('error');
-                //
-                //   }
-                //
-                //
-                //
-                //   if (msg == "" || msg == null) {
-                //       var addBorder3 = document.querySelector("#question");
-                //       addBorder3.classList.add("error");
-                // }
 
                 message.classList.add('errorMsg');
                 message.innerHTML = errorMessage[i];
@@ -83,11 +70,7 @@
                 messagesList.appendChild(message);
             }
 
-
-        } else {
-            // send data to server
-            return true;
+            return false;
         }
-        e.preventDefault();
     }
 })()

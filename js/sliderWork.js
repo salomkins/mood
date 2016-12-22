@@ -1,3 +1,4 @@
+(function(){
 function sliderWork(){
 pageSlider('#work-slider', 'horizontal');
 
@@ -81,5 +82,4 @@ this.pageSlider = function(selector, direction = 'vertical') {
 
 }
 }
-
-sliderWork();
+})()
