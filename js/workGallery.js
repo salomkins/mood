@@ -15,38 +15,7 @@ function removeActive(clickedButton) {
     })
 }
 
-var buttons = document.querySelectorAll(".work-btn");
 
-buttons = [].slice.call(buttons);
-
-buttons.forEach(function(button) {
-    button.addEventListener("click", clickButton)
-    // button.addEventListener("click", workFilter)
-})
-
-function clickButton(e) {
-    e.preventDefault;
-    var clickedButton = e.currentTarget;
-    removeActive(clickedButton);
-    setActive(clickedButton);
-    workFilter(e)
-}
-
-function workFilter(e) {
-    if (e.currentTarget.classList.contains('work-btn')) {
-        var catId = e.currentTarget.getAttribute('data-workid');
-        var filteredItems = [];
-        if (catId !== null) {
-            filteredItems = itemsWork.filter(function(item) {
-                return item.workid === parseInt(catId);
-            });
-        } else {
-            filteredItems = itemsWork;
-        }
-        buildWorkItems(filteredItems);
-        // setActive();
-    }
-}
 
 function init(){
   var categories = [
@@ -351,5 +320,38 @@ function init(){
   </a>'));
       }
   }
+
+  function workFilter(e) {
+      if (e.currentTarget.classList.contains('work-btn')) {
+          var catId = e.currentTarget.getAttribute('data-workid');
+          var filteredItems = [];
+          if (catId !== null) {
+              filteredItems = itemsWork.filter(function(item) {
+                  return item.workid === parseInt(catId);
+              });
+          } else {
+              filteredItems = itemsWork;
+          }
+          buildWorkItems(filteredItems);
+      }
+  }
+
+  function clickButton(e) {
+      e.preventDefault;
+      var clickedButton = e.currentTarget;
+      removeActive(clickedButton);
+      setActive(clickedButton);
+      workFilter(e)
+  }
+
+  var buttons = document.querySelectorAll(".work-btn");
+
+  buttons = [].slice.call(buttons);
+
+  buttons.forEach(function(button) {
+      button.addEventListener("click", clickButton)
+      // button.addEventListener("click", workFilter)
+  })
+
 }
 })()
