@@ -63,6 +63,7 @@ a, a:link, a:visited {
 
 .header {
     background-image: url("../media/bg-red.svg");
+    background-attachment: fixed;
     background-size: cover;
     position: relative;
     background-position: center;
@@ -209,6 +210,7 @@ img .one-offer-block{
     background-image: url("../media/bg-green.svg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .description-work {
@@ -348,6 +350,7 @@ button.slider-button{
       background-image: url("../media/bg-green-overlay.svg");
       background-size: cover;
       background-position: center;
+      background-attachment: fixed;
   }
 
 .table-pricelist{
@@ -532,6 +535,7 @@ button.sign-up:hover, button.activated, .sign-up button.activated{
     background-image: url("../media/bg-blue.svg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .contact-form{
